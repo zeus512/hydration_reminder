@@ -1,0 +1,54 @@
+name: Verify and Build
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request
+
+jobs:
+
+  Verify:
+    needs: PreChecks
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v2
+    - name: Run detekt and Ktlint
+      run: chmod +x gradlew && ./gradlew detekt ktlintReport --stacktrace --continue --no-daemon
+    - name: Publish Analysis Result
+      if: always()
+      run: bundle install && bundle exec danger --dangerfile=Dangerfile --danger_id=Verification
+      env:
+        DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_USER_TOKEN }}
+
+  Build:
+    needs: Verify
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v2
+    - name: Build Apk's
+      run: chmod +x gradlew && ./gradlew assembleGoogleDebug --stacktrace --no-daemon
+      env:
+        KOO_KEYSTORE_ALIAS: ${{ secrets.KEYSTORE_ALIAS }}
+        KOO_KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+    - name: Prepare Release Notes
+      run: |
+        echo "RELEASE_NOTES=by $PR_AUTHOR from https://github.com/zeus512/hydration_reminder/pull/$PR_NUMBER" >> $GITHUB_ENV
+      env:
+        PR_TITLE: ${{ github.event.pull_request.title }}
+        PR_AUTHOR: ${{ github.actor }}
+        PR_NUMBER: ${{ github.event.number }}
+  Test:
+    needs: Build
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v2
+    - name: Test Production Debug APK
+      run: chmod +x gradlew && ./gradlew testDebug --stacktrace --no-daemon
