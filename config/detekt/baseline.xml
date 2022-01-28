@@ -1,0 +1,714 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CollapsibleIfStatements:KooFeedAudioVideoViewHolder.kt$KooFeedAudioVideoViewHolder$if (channelContentData != null) { if (FeedAudioPlayerManager.isCurrentlyPlaying( channelContentData.contentId ) ) { val feedAudioPlayerManager = FeedAudioPlayerManager.getInstance() feedAudioPlayerManager?.pause() markPaused() } }</ID>
+    <ID>CollapsibleIfStatements:LobbyFragment.kt$LobbyFragment.&lt;no name provided&gt;$if (dy &gt; 0) { // Pagination check for All Feed Types if (visibleItemCount + firstVisibleItemPosition &gt;= totalItemCount &amp;&amp; firstVisibleItemPosition &gt;= 0 ) { // Load more feed loadData(false) } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualActivity.kt$MultilingualActivity$if (binding.mentionSuggestionView.getVisibility() == View.VISIBLE) { if (x &lt; v.getLeft() || x &gt; v.getRight() || y4 &lt; binding.tabLayout.getTop()) { clearMentions() Utils.hideSoftKeyboard(this) } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualActivity.kt$MultilingualActivity$if (it as Boolean) { // retry to upload the attachment if (binding.postButton.tag != null) { viewModel.doPost(binding.postButton.tag as MultilingualPostDetail) } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualActivity.kt$MultilingualActivity$if (x &lt; v.getLeft() || x &gt; v.getRight() || y &lt; v.getTop() || y &gt; v.getBottom()) { if (x2 &lt; binding.keyboardSuggestionView.root.getLeft() || x2 &gt; binding.keyboardSuggestionView.root.getRight() || y2 &lt; binding.keyboardSuggestionView.root.getTop() || y2 &gt; binding.keyboardSuggestionView.root.getBottom()) { if (x2 &lt; binding.layoutAttachments.attachmentsLayout.left || x2 &gt; binding.layoutAttachments.attachmentsLayout.right || y2 &lt; binding.layoutAttachments.attachmentsLayout.top || y2 &gt; binding.layoutAttachments.attachmentsLayout.bottom ) { if (binding.mentionSuggestionView.getVisibility() == View.VISIBLE) { if (x &lt; v.getLeft() || x &gt; v.getRight() || y4 &lt; binding.tabLayout.getTop()) { clearMentions() Utils.hideSoftKeyboard(this) } } } } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualActivity.kt$MultilingualActivity$if (x2 &lt; binding.keyboardSuggestionView.root.getLeft() || x2 &gt; binding.keyboardSuggestionView.root.getRight() || y2 &lt; binding.keyboardSuggestionView.root.getTop() || y2 &gt; binding.keyboardSuggestionView.root.getBottom()) { if (x2 &lt; binding.layoutAttachments.attachmentsLayout.left || x2 &gt; binding.layoutAttachments.attachmentsLayout.right || y2 &lt; binding.layoutAttachments.attachmentsLayout.top || y2 &gt; binding.layoutAttachments.attachmentsLayout.bottom ) { if (binding.mentionSuggestionView.getVisibility() == View.VISIBLE) { if (x &lt; v.getLeft() || x &gt; v.getRight() || y4 &lt; binding.tabLayout.getTop()) { clearMentions() Utils.hideSoftKeyboard(this) } } } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualActivity.kt$MultilingualActivity$if (x2 &lt; binding.layoutAttachments.attachmentsLayout.left || x2 &gt; binding.layoutAttachments.attachmentsLayout.right || y2 &lt; binding.layoutAttachments.attachmentsLayout.top || y2 &gt; binding.layoutAttachments.attachmentsLayout.bottom ) { if (binding.mentionSuggestionView.getVisibility() == View.VISIBLE) { if (x &lt; v.getLeft() || x &gt; v.getRight() || y4 &lt; binding.tabLayout.getTop()) { clearMentions() Utils.hideSoftKeyboard(this) } } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualViewModel.kt$MultilingualViewModel$if (!isSelectedOriginal) { if (originalLanguage == null &amp;&amp; isActive) { originalLanguage = langCode languageTabModel?.isOriginal = true isMarkedAsOriginal = true } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualViewModel.kt$MultilingualViewModel$if (allowForSelected) { if (data.isActive()) { if (!data.isPostAllow()) { errorLanguageCode = it.key errorTabPosition = index allowForSelected = false } } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualViewModel.kt$MultilingualViewModel$if (data.isActive()) { if (!data.isPostAllow()) { errorLanguageCode = it.key errorTabPosition = index allowForSelected = false } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualViewModel.kt$MultilingualViewModel$if (data.isActive()) { if (!data.isToPostButtonEnabled()) { isEnablePostButton = false } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualViewModel.kt$MultilingualViewModel$if (isEnablePostButton) { if (data.isActive()) { if (!data.isToPostButtonEnabled()) { isEnablePostButton = false } } }</ID>
+    <ID>CollapsibleIfStatements:MultilingualViewModel.kt$MultilingualViewModel$if (tabModelData.isToPostButtonEnabled().not()) { if (tabModelData.hasEdited &amp;&amp; tabModelData.hasAttachments() &amp;&amp; ( tabModelData.hasTextInThought() .not() || ( tabModelData.isPollValid() .not() || tabModelData.isPollOptionAreSame() ) ) ) { _nextAllow.postValue( PostValidation( languageCode = tabModelData.code, isAllow = false, errorValidation = findCurrentTab(tabModelData.code)?.findPostValidationMessage(), errorTabPosition = index ) ) return } }</ID>
+    <ID>CollapsibleIfStatements:NewMessageActivity.kt$NewMessageActivity.&lt;no name provided&gt;$if (dy &gt; 0) { // Pagination check if (visibleItemCount + firstVisibleItemPosition + 1 &gt;= totalItemCount &amp;&amp; firstVisibleItemPosition &gt;= 0 ) { // Load more feed viewModel.loadNextPage() } }</ID>
+    <ID>CollapsibleIfStatements:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$if (hasProfessionType()) { if (ALL_SAMPLE_FEED_PREFERENCE == intent.getIntExtra( PROFESSION_TYPE, ALL_SAMPLE_FEED_PREFERENCE ) ) { mHandler = Handler() mTimerRunnable = Runnable { Logger.d("TIMER_Preference_selection", "" + TIME_REMAINING_MS) if (TIME_REMAINING_MS &gt; 0) { TIME_REMAINING_MS -= 1000 mHandler.postDelayed(mTimerRunnable, 1000) } else { val event = VEvent("Proceed", Event.PREFERENCE_SELECTION, Event.ONBOARDING) event.properties.setValue("2").setCount("0") event.properties.screenLocation = Event.ONBOARDING_PREFERENCE_SELECTION Vokalytics.track(event) TIME_REMAINING_MS = FirebaseRemoteConfig.getInstance() .getLong(FireBaseRemoteConfigHelper.PREFERENCES_AUTOREDIRECT_TIME) if (SharedPrefs.getBooleanParam(SharedPrefs.SHOW_ONBOARDING_PEOPLE_SCREEN, false)) { if (viewmodel.professionCount &gt; 0) { SharedPrefs.setBooleanParam(SharedPrefs.SELECTED_PREFERENCE_COUNT, viewmodel.professionCount&gt; 0) val intent = Intent(this, OnBoardingUserListActivity::class.java) startActivity(intent) } else { proceedToHomeActivity() } } else { proceedToHomeActivity() } } } mHandler.postDelayed(mTimerRunnable, 1000) } }</ID>
+    <ID>CollapsibleIfStatements:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$if (hasProfessionType()) { if (ALL_SAMPLE_FEED_PREFERENCE == intent.getIntExtra( PROFESSION_TYPE, ALL_SAMPLE_FEED_PREFERENCE ) ) { mHandler = Handler() mTimerRunnable2 = Runnable { Logger.d("TIMER_Preference_selection_new", "" + TIME_REMAINING_MS_AFTER_SELECTION) if (TIME_REMAINING_MS_AFTER_SELECTION &gt; 0) { TIME_REMAINING_MS_AFTER_SELECTION -= 1000 mHandler.postDelayed(mTimerRunnable2, 1000) } else { TIME_REMAINING_MS_AFTER_SELECTION = FirebaseRemoteConfig.getInstance() .getLong(FireBaseRemoteConfigHelper.PREFERENCE_SELECTED_AUTOREDIRECT_TIME) if (ALL_SAMPLE_FEED_PREFERENCE == intent.getIntExtra(PROFESSION_TYPE, ALL_SAMPLE_FEED_PREFERENCE)) { viewmodel.postProfession(true) } if (SharedPrefs.getBooleanParam(SharedPrefs.SHOW_ONBOARDING_PEOPLE_SCREEN, false)) { if (viewmodel.professionCount &gt; 0) { SharedPrefs.setBooleanParam(SharedPrefs.SELECTED_PREFERENCE_COUNT, viewmodel.professionCount&gt; 0) val intent = Intent(this, OnBoardingUserListActivity::class.java) startActivity(intent) } else { proceedToHomeActivity() } } else { proceedToHomeActivity() } } } mHandler.postDelayed(mTimerRunnable2, 1000) } }</ID>
+    <ID>CollapsibleIfStatements:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$if (hasProfessionType()) { if (ALL_SAMPLE_FEED_PREFERENCE == intent.getIntExtra(PROFESSION_TYPE, ALL_SAMPLE_FEED_PREFERENCE)) { mHandler.removeCallbacksAndMessages(null) } }</ID>
+    <ID>CollapsibleIfStatements:RoomViewModel.kt$RoomViewModel$if (notifsLeft &lt; 2) { // delete Group if (Utils.hasAndroidOreo()) { FCMListener.deleteGroup(applicationContext, FCMGroupManager.NOTIFICATION_CHANNEL_GROUP_ID_KOO_CHAT) } }</ID>
+    <ID>CollapsibleIfStatements:TopicListingFragment.kt$TopicListingFragment.&lt;no name provided&gt;$if (dx &gt; 0) { if (visibleItemCount + firstVisibleItemPosition + 5 &gt;= totalItemCount &amp;&amp; firstVisibleItemPosition &gt;= 0 ) { // Load more feed } }</ID>
+    <ID>ComplexCondition:KooCreationFragment.kt$KooCreationFragment$it != null &amp;&amp; it == 0 &amp;&amp; binding.postTextView.isEnabled &amp;&amp; activityVm.getCurrentTabTextData() .isNullOrEmpty() &amp;&amp; activity?.isFinishing != true</ID>
+    <ID>ComplexCondition:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$( Utils.isStringNotNull(kooFeedEntityItemModel.followingFeedEntity.displayHeader) || Utils.isStringNotNull(kooFeedEntityItemModel.followingFeedEntity.kooContent().reKooByName) ) &amp;&amp; ( (kooFeedEntityItemModel as? KooFeedThreadEntityModel)?.threadPosition == null || (kooFeedEntityItemModel as? KooFeedThreadEntityModel)?.threadPosition == 0 )</ID>
+    <ID>ComplexCondition:KooFeedBaseViewHolder.kt$KooFeedBaseViewHolder$TextUtils.equals(sectionType, FollowingFeedEntity.TYPE_THREAD) || TextUtils.equals(sectionType, FollowingFeedEntity.TYPE_THREAD_LIKE) || TextUtils.equals(sectionType, FollowingFeedEntity.TYPE_THREAD_COMMENT) || TextUtils.equals(sectionType, FollowingFeedEntity.TYPE_THREAD_REACTION) || TextUtils.equals(sectionType, FollowingFeedEntity.TYPE_THREAD_REKOO)</ID>
+    <ID>ComplexCondition:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$bannerData.isShowBlink &amp;&amp; Utils.isBlinkActionButton() &amp;&amp; Utils.isBlipAllowed() &amp;&amp; !SharedPrefs.getBooleanParam(getActionButtonClickedParam(bannerData), false)</ID>
+    <ID>ComplexCondition:KooFeedInteractionViewHolder.kt$KooFeedInteractionViewHolder$dataStore.containsKey(contentData.contentId) &amp;&amp; dataStore[contentData.contentId]!! &amp;&amp; FirebaseRemoteConfig.getInstance().getBoolean(FireBaseRemoteConfigHelper.SHOW_LIKE_BLIP) &amp;&amp; FirebaseRemoteConfig.getInstance() .getBoolean(FireBaseRemoteConfigHelper.LIKE_BLINK_AFTER_COMMENT_ANIMATION)</ID>
+    <ID>ComplexCondition:KooFeedMoreLikeThisViewHolder.kt$KooFeedMoreLikeThisViewHolder$contentData.recommendationAction != null &amp;&amp; contentData.recommendationAction.action != null &amp;&amp; (contentData.recommendationAction.action == TYPE_HASHTAG || contentData.recommendationAction.action == TYPE_SUGGEST_CATEGORY) &amp;&amp; contentData.profileImages != null</ID>
+    <ID>ComplexCondition:LanguageTabModel.kt$LanguageTabModel$hasTextInThought() || isAudioPresent() || isVideoPresent() || isLinkAdded() || isGifAdded() || isImageAdded() || hasPollData()</ID>
+    <ID>ComplexCondition:LobbyFragment.kt$LobbyFragment$Utils.isStringNotNull(action) &amp;&amp; TextUtils.equals(action, MyChannelEditorFragment.ACTION_FOLLOW) &amp;&amp; SharedPrefs.getIntParam(SharedPrefs.FOLLOW_COUNT) &lt; Statics.REFRESH_FEED_FOLLOW_COUNT &amp;&amp; channel != null</ID>
+    <ID>ComplexCondition:MultilingualActivity.kt$MultilingualActivity$transAdapter != null &amp;&amp; transAdapter.translationList != null &amp;&amp; transAdapter.translationList.size &gt;= 2 &amp;&amp; SharedPrefs.getBooleanParam( SharedPrefs.IS_KEYBOARD_SUGGESTIONS_ON, true )</ID>
+    <ID>ComplexCondition:MultilingualActivity.kt$MultilingualActivity$v != null &amp;&amp; (ev.action == MotionEvent.ACTION_UP || ev.action == MotionEvent.ACTION_MOVE) &amp;&amp; v is EditText &amp;&amp; !v.javaClass.name.startsWith("android.webkit.")</ID>
+    <ID>ComplexCondition:MultilingualActivity.kt$MultilingualActivity$x &lt; v.getLeft() || x &gt; v.getRight() || y &lt; v.getTop() || y &gt; v.getBottom()</ID>
+    <ID>ComplexCondition:MultilingualActivity.kt$MultilingualActivity$x2 &lt; binding.keyboardSuggestionView.root.getLeft() || x2 &gt; binding.keyboardSuggestionView.root.getRight() || y2 &lt; binding.keyboardSuggestionView.root.getTop() || y2 &gt; binding.keyboardSuggestionView.root.getBottom()</ID>
+    <ID>ComplexCondition:MultilingualActivity.kt$MultilingualActivity$x2 &lt; binding.layoutAttachments.attachmentsLayout.left || x2 &gt; binding.layoutAttachments.attachmentsLayout.right || y2 &lt; binding.layoutAttachments.attachmentsLayout.top || y2 &gt; binding.layoutAttachments.attachmentsLayout.bottom</ID>
+    <ID>ComplexCondition:MultilingualActivity.kt$MultilingualActivity$x3 &lt; binding.mentionRecyclerView.getLeft() || x3 &gt; binding.mentionRecyclerView.getRight() || y3 &lt; binding.mentionRecyclerView.getTop() || y3 &gt; binding.mentionRecyclerView.getBottom()</ID>
+    <ID>ComplexCondition:MultilingualViewModel.kt$MultilingualViewModel$multilingualContentData?.audioData != null || multilingualContentData?.images != null || multilingualContentData?.videoData != null || multilingualContentData?.gif != null || multilingualContentData.link != null</ID>
+    <ID>ComplexCondition:MultilingualViewModel.kt$MultilingualViewModel$tabModelData.hasEdited &amp;&amp; tabModelData.hasAttachments() &amp;&amp; ( tabModelData.hasTextInThought() .not() || ( tabModelData.isPollValid() .not() || tabModelData.isPollOptionAreSame() ) )</ID>
+    <ID>ComplexCondition:RoomViewModel.kt$RoomViewModel$( (room.isActivateRequired &amp;&amp; (room.isReceiverApproved || room.isSenderApproved)) || (room.isStale &amp;&amp; (receiver.isChatMode &amp;&amp; room.receiverFollowing)) ) &amp;&amp; !LobbyManager.getActivatedRoom(room.roomId)</ID>
+    <ID>ComplexInterface:IKooFeedAdapter.kt$IKooFeedAdapter&lt;T&gt;</ID>
+    <ID>ComplexInterface:IKooFeedItem.kt$IKooFeedItem : IFeedItem</ID>
+    <ID>ComplexInterface:LanguageDao.kt$LanguageDao</ID>
+    <ID>ComplexMethod:Chat.kt$ChatRoom$override fun equals(other: Any?): Boolean</ID>
+    <ID>ComplexMethod:FirebaseRepository.kt$FirebaseRepository$fun init(room: ChatRoom, sender: Channel, receiver: Channel)</ID>
+    <ID>ComplexMethod:FirebaseRepository.kt$FirebaseRepository$private fun formatChatResult(messages: List&lt;ChatMessage&gt;?)</ID>
+    <ID>ComplexMethod:KooCreationFragment.kt$KooCreationFragment$private fun updateTextBox( data: LanguageTabModel, toCopyOriginal: Boolean, isFromKooClick: Boolean )</ID>
+    <ID>ComplexMethod:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$fun getMappedKooFeedData( followingFeedEntity: FollowingFeedEntity, position: Int, type: String, gson: Gson, accountHelper: IAccountHelper ): List&lt;IKooFeedItem&gt;</ID>
+    <ID>ComplexMethod:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$override fun onBind(entity: IFeedItem, position: Int)</ID>
+    <ID>ComplexMethod:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun onCreateViewHolder( parent: ViewGroup, viewType: Int ): BaseViewHolder&lt;IFeedItem&gt;</ID>
+    <ID>ComplexMethod:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$private fun onMenuItemClicked( finalChannelData: ChannelContentData, v: View, finalParentContentData: ChannelContentData? )</ID>
+    <ID>ComplexMethod:LanguageTabModel.kt$LanguageTabModel$fun findErrorMessageForTab(dataType: Int): Int?</ID>
+    <ID>ComplexMethod:LobbyAdapter.kt$LobbyAdapter.ViewHolder$fun bind(lobbyUser: UserRoomModel)</ID>
+    <ID>ComplexMethod:MLKPostWorker.kt$MLKPostWorker$private fun createEntityAndAppendToFeedsList( data: MLKPostResponse?, kooMode: ChannelContentData.KuMode )</ID>
+    <ID>ComplexMethod:MultilingualActivity.kt$MultilingualActivity$override fun dispatchTouchEvent(ev: MotionEvent): Boolean</ID>
+    <ID>ComplexMethod:MultilingualActivity.kt$MultilingualActivity$override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)</ID>
+    <ID>ComplexMethod:MultilingualActivity.kt$MultilingualActivity$private fun updateAttachmentsLayout()</ID>
+    <ID>ComplexMethod:MultilingualViewModel.kt$MultilingualViewModel$ fun doPost(multilingualPostValidation: MultilingualPostDetail)</ID>
+    <ID>ComplexMethod:MultilingualViewModel.kt$MultilingualViewModel$private fun buildAnswerEntityBasedOnMode(args: Bundle?)</ID>
+    <ID>ComplexMethod:MultilingualViewModel.kt$MultilingualViewModel$private fun validatePostDetail()</ID>
+    <ID>ComplexMethod:RemoteConfigModels.kt$FeedbackItem$fun getFeedbackNumberBasedOnLang(lang: String?): String</ID>
+    <ID>ComplexMethod:RemoteConfigModels.kt$ReportKoo$fun getIssueBasedOnLang(lang: String?): String</ID>
+    <ID>ComplexMethod:RoomActivity.kt$RoomActivity$private fun subscribeUi()</ID>
+    <ID>ComplexMethod:UserRoomModel.kt$UserRoomModel$override fun equals(obj: Any?): Boolean</ID>
+    <ID>ConstructorParameterNaming:CategoryFilter.kt$CategoryFilter$val feed_type: String</ID>
+    <ID>ConstructorParameterNaming:CategoryFilter.kt$CategoryFilter$val section_type: String</ID>
+    <ID>ConstructorParameterNaming:Chat.kt$ChatRoom$@ColumnInfo(name = "deleted_at") var deleted_at: Int = 0</ID>
+    <ID>ConstructorParameterNaming:Meta.kt$Meta$@Expose val file_size: Int?</ID>
+    <ID>ConstructorParameterNaming:Meta.kt$Meta$@Expose val frame_rate: Int?</ID>
+    <ID>ConstructorParameterNaming:Meta.kt$Meta$@Expose val hls_version: Int?</ID>
+    <ID>ConstructorParameterNaming:Meta.kt$Meta$@Expose val segment_duration: Double?</ID>
+    <ID>ConstructorParameterNaming:PeoplePreferencesEntity.kt$PeoplePreferencesEntity$val feed_type: String</ID>
+    <ID>ConstructorParameterNaming:PeoplePreferencesEntity.kt$PeoplePreferencesEntity$val section_type: String</ID>
+    <ID>ConstructorParameterNaming:ProfessionResponse.kt$ProfessionResponse$val category_id: Int? = null</ID>
+    <ID>ConstructorParameterNaming:ProfessionResponse.kt$ProfessionResponse$val sub_category_id: Int? = null</ID>
+    <ID>DataClassShouldBeImmutable:CategoryFilter.kt$CategoryFilter$@PrimaryKey(autoGenerate = true) var id: Int = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatMessage$@Exclude @set:Exclude @get:Exclude var chatId: String? = null</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatMessage$@Exclude @set:Exclude @get:Exclude var showTs = false</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatMessage$@Exclude @set:Exclude @get:Exclude var uiItemType = ChatUiItem.VIEW_SEND</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatMessage$var deletedBy: MutableList&lt;String&gt;? = null</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "deleted_at") var deleted_at: Int = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "last_msg") var lastMsg: String?</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "last_msg_time") var lastMsgTime: Int = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "last_received") var lastReceived: Int = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "modified_at") var modifiedAt: Int = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "pending_update") var pending: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "receiver_blocking") var receiverBlocking: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "receiver_following") var receiverFollowing: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "receiver_status") var receiverStatus: Short = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "room_type") var roomType: String?</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "sender_status") var senderStatus: Short = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatRoom$@ColumnInfo(name = "status") var status: Short = 0</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatUser$@Exclude @set:Exclude @get:Exclude var isBlocked: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatUser$@Exclude @set:Exclude @get:Exclude var isChatOn: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:Chat.kt$ChatUser$@Exclude @set:Exclude @get:Exclude var isFollowing: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var emojiStatus: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var hasEdited = false</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var isExclusive = false</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var isOriginal: Boolean</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var isTextClose = false</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var isToDecideOriginal = false</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var multilingualContentData: MultilingualContentData</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var originalCode: String? = null</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var previewScreenControlDetails = PreviewScreenControlDetails(false)</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var recordState = Statics.RECORD_TYPE_DEFAULT</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$LanguageTabModel$var tabStatus: TabState</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$PreviewScreenControlDetails$var isRemoved: Boolean</ID>
+    <ID>DataClassShouldBeImmutable:LanguageTabModel.kt$PreviewScreenControlDetails$var isTranslationSuccess: Boolean = true</ID>
+    <ID>DataClassShouldBeImmutable:MultilingualContents.kt$MediaDataVideo$var isRecorded: Boolean = false</ID>
+    <ID>DataClassShouldBeImmutable:MultilingualContents.kt$PollDetails$var duration: Long = 24 * 60 * 60</ID>
+    <ID>DataClassShouldBeImmutable:MultilingualContents.kt$PollDetails$var options: Array&lt;String&gt;? = null</ID>
+    <ID>DataClassShouldBeImmutable:MultilingualContents.kt$PollDetails$var pollOptionsCount: Int = 0</ID>
+    <ID>DataClassShouldBeImmutable:MultilingualPostDetail.kt$MultilingualPostDetail$var noOfPosts: Int</ID>
+    <ID>DataClassShouldBeImmutable:MultilingualTabDetails.kt$MultilingualTabDetails$@PrimaryKey var lng: String</ID>
+    <ID>DataClassShouldBeImmutable:PollPercentageCalculator.kt$PollPercentageCalculator$var decimalNumber = Array&lt;Int&gt;(4) { 0 }</ID>
+    <ID>DataClassShouldBeImmutable:PollPercentageCalculator.kt$PollPercentageCalculator$var diffVote = 0</ID>
+    <ID>DataClassShouldBeImmutable:PollPercentageCalculator.kt$PollPercentageCalculator$var floatNumber = Array&lt;Double&gt;(4) { 0.0 }</ID>
+    <ID>DataClassShouldBeImmutable:TopicItemDTO.kt$TopicItemDTO$@Expose @SerializedName("isFollowing") var isFollowing: Boolean</ID>
+    <ID>DataClassShouldBeImmutable:TopicUi.kt$TopicFollowStatus$var isFollowing: Boolean</ID>
+    <ID>EmptyCatchBlock:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder${ }</ID>
+    <ID>EmptyCatchBlock:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter${ }</ID>
+    <ID>EmptyCatchBlock:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS${ }</ID>
+    <ID>EmptyCatchBlock:TopicCollectionViewModel.kt$TopicCollectionViewModel${ }</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.AddGalleryImage$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.AddGif$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.AddLink$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.AddPoll$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.AddVideo$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.RemoveGalleryImage$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.RemoveGif$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.RemoveLink$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.RemovePoll$()</ID>
+    <ID>EmptyDefaultConstructor:KooMediaActions.kt$KooMediaActions.RemoveVideo$()</ID>
+    <ID>EmptyFunctionBlock:KooCreationFragment.kt$KooCreationFragment${ }</ID>
+    <ID>EmptyFunctionBlock:KooCreationFragment.kt$KooCreationFragment.&lt;no name provided&gt;${ }</ID>
+    <ID>EmptyFunctionBlock:KooCreationFragment.kt$KooCreationFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:KooFeedExpertItem.kt$KooFeedExpertItem${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedExploreFurtherItem.kt$KooFeedExploreFurtherItem${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedLoaderItem.kt$KooFeedLoaderItem${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedMultiLingualViewHolder.kt$KooFeedMultiLingualViewHolder${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedReKooPreviewItem.kt$KooFeedReKooPreviewItem${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedReKooViewHolder.kt$KooFeedReKooViewHolder${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedReKooViewHolder.kt$KooFeedReKooViewHolder${}</ID>
+    <ID>EmptyFunctionBlock:KooFeedRecyclerViewHolder.kt$KooFeedRecyclerViewHolder${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedVideoViewHolder.kt$KooFeedVideoViewHolder.&lt;no name provided&gt;${ }</ID>
+    <ID>EmptyFunctionBlock:KooFeedVideoViewHolder.kt$KooFeedVideoViewHolder.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:KooFeedWebWidgetItem.kt$KooFeedWebWidgetItem${ }</ID>
+    <ID>EmptyFunctionBlock:LobbyActivity.kt$LobbyActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:LobbyFragment.kt$LobbyFragment${}</ID>
+    <ID>EmptyFunctionBlock:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS.&lt;no name provided&gt;${ }</ID>
+    <ID>EmptyFunctionBlock:MultilingualActivity.kt$MultilingualActivity${ }</ID>
+    <ID>EmptyFunctionBlock:MultilingualActivity.kt$MultilingualActivity.&lt;no name provided&gt;${ }</ID>
+    <ID>EmptyFunctionBlock:MultilingualActivity.kt$MultilingualActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:MultilingualViewModel.kt$MultilingualViewModel.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:NewMessageActivity.kt$NewMessageActivity${ }</ID>
+    <ID>EmptyFunctionBlock:NewMessageActivity.kt$NewMessageActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:PreviewFragment.kt$PreviewFragment${ }</ID>
+    <ID>EmptyFunctionBlock:RoomActivity.kt$RoomActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:SuggestedKoosActivity.kt$SuggestedKoosActivity${ }</ID>
+    <ID>EmptyFunctionBlock:TopicDetailActivity.kt$TopicDetailActivity${ }</ID>
+    <ID>EmptyFunctionBlock:TopicListingFragment.kt$TopicListingFragment.&lt;no name provided&gt;${ }</ID>
+    <ID>EmptyIfBlock:MultilingualViewModel.kt$MultilingualViewModel${ }</ID>
+    <ID>EmptySecondaryConstructor:Chat.kt$ChatRoom${ }</ID>
+    <ID>EmptySecondaryConstructor:TopicUi.kt$TopicFollowStatus${ }</ID>
+    <ID>EqualsWithHashCodeExist:UserRoomModel.kt$UserRoomModel</ID>
+    <ID>ExplicitItLambdaParameter:MultilingualViewModel.kt$MultilingualViewModel${ index, it -&gt; val data = it.value if (isEnablePostButton) { if (data.isActive()) { if (!data.isToPostButtonEnabled()) { isEnablePostButton = false } } } if (allowForSelected) { if (data.isActive()) { if (!data.isPostAllow()) { errorLanguageCode = it.key errorTabPosition = index allowForSelected = false } } } if (data.isActive()) { noOfPosts += 1 } if (it.key == selectedLanguageCode) { selectedTabPosition = index } }</ID>
+    <ID>ExplicitItLambdaParameter:MultilingualViewModel.kt$MultilingualViewModel${ index, it -&gt; val tabModelData = it.value if (tabModelData.isToPostButtonEnabled().not()) { if (tabModelData.hasEdited &amp;&amp; tabModelData.hasAttachments() &amp;&amp; ( tabModelData.hasTextInThought() .not() || ( tabModelData.isPollValid() .not() || tabModelData.isPollOptionAreSame() ) ) ) { _nextAllow.postValue( PostValidation( languageCode = tabModelData.code, isAllow = false, errorValidation = findCurrentTab(tabModelData.code)?.findPostValidationMessage(), errorTabPosition = index ) ) return } } if (tabModelData.isOriginal) { originalTabModelData = tabModelData } }</ID>
+    <ID>ForbiddenComment:FirebaseRepository.kt$FirebaseRepository$// TODO: Improve AUTH - Custom authentication using android</ID>
+    <ID>FunctionMaxLength:FeedItemUtils.kt$FeedItemUtils$@JvmStatic fun getThreadBasedFeedContentMargin(): Int</ID>
+    <ID>FunctionMaxLength:IKooFeedAdapter.kt$IKooFeedAdapter$fun updateThreadCurrentPlayPosition( viewHolder: RecyclerView.ViewHolder?, channelContentData: ChannelContentData? )</ID>
+    <ID>FunctionMaxLength:IKooFeedItem.kt$IFeedItem$fun getAbsolutePositionInRecyclerViewAdapter(): Int</ID>
+    <ID>FunctionMaxLength:IKooFeedItem.kt$IKooFeedItem$override fun getAbsolutePositionInRecyclerViewAdapter(): Int</ID>
+    <ID>FunctionMaxLength:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$private fun wrapChannelDataInFollowingFeedItem( channelContentData: ChannelContentData, parentFeedEntity: FollowingFeedEntity, uiItemType: String, gson: Gson ): FollowingFeedEntity</ID>
+    <ID>FunctionMaxLength:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun updateThreadCurrentPlayPosition( viewHolder: RecyclerView.ViewHolder?, channelContentData: ChannelContentData? )</ID>
+    <ID>FunctionMaxLength:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$private fun getPositionForPeopleSectionType(peopleSectionType: String?): Int</ID>
+    <ID>FunctionMaxLength:LanguageTabModel.kt$LanguageTabModel$fun isOriginalUsedForContentFormats()</ID>
+    <ID>FunctionMaxLength:MLKPostWorker.kt$MLKPostWorker$// BE return the 1st element data in the response private fun appLanguageKooShouldBeAtFirstPlace(list: MutableList&lt;ContentUploadRequest&gt;)</ID>
+    <ID>FunctionMaxLength:MLKPostWorker.kt$MLKPostWorker$private fun createEntityAndAppendToFeedsList( data: MLKPostResponse?, kooMode: ChannelContentData.KuMode )</ID>
+    <ID>FunctionMaxLength:MultilingualAnalytics.kt$ fun onMultiLingualPostingPopupClick( screen: String?, mode: String, value: String, is_ExclusiveKoo: Boolean, )</ID>
+    <ID>FunctionMaxLength:MultilingualViewModel.kt$MultilingualViewModel$fun updateSelectedLanguageNameToHeader(langlist: List&lt;String&gt;)</ID>
+    <ID>FunctionMaxLength:PardonDisplayWorkFlow.kt$PardonDisplayWorkFlow$fun clearPardonFlowStateIfApplicable(current: Activity)</ID>
+    <ID>FunctionMaxLength:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$private fun startAutoProceedTimerAfterSelection()</ID>
+    <ID>FunctionMaxLength:PinAKooAnalytics.kt$PinAKooAnalytics$fun findActionForPinKooConfirmation(isToPin: Boolean)</ID>
+    <ID>FunctionMaxLength:PreviewFragment.kt$PreviewFragment$private fun resetPreviewScreenControlDetails()</ID>
+    <ID>FunctionMaxLength:TopicCollectionListingActivity.kt$TopicCollectionListingActivity$private fun subscribeToTopicDetailNavigation()</ID>
+    <ID>FunctionMaxLength:TopicCollectionViewModel.kt$TopicCollectionViewModel$private suspend fun buildTopicListingUiFromResponse(feed: UserFeed)</ID>
+    <ID>FunctionMaxLength:TopicListingFragment.kt$TopicListingFragment$private fun subscribeToTopicDetailNavigation()</ID>
+    <ID>FunctionMaxLength:ViewModelModule.kt$ViewModelModule$@Binds @IntoMap @ViewModelKey(PreferenceSelectionViewModel::class) abstract fun bindPreferenceSelectionViewModel( preferenceSelectionViewModel: PreferenceSelectionViewModel ): ViewModel</ID>
+    <ID>FunctionNaming:MultilingualAnalytics.kt$fun sendMLK_Landed()</ID>
+    <ID>FunctionNaming:MultilingualAnalytics.kt$fun sendRview_MLK_ActionEvent( selectedLanguage: List&lt;String&gt;, language: String, index: Int, is_Exclusive: Boolean, content_formats: List&lt;String&gt;, contentTitle: String?, originalContent: String?, originalContentIndex: Int, mode: String )</ID>
+    <ID>FunctionOnlyReturningConstant:MultiLanguageSelectionVM.kt$MultiLanguageSelectionVM$fun hasChangeToPreviousSelection(): Boolean</ID>
+    <ID>FunctionOnlyReturningConstant:MultilingualActivity.kt$MultilingualActivity$fun getLocation(): String</ID>
+    <ID>FunctionOnlyReturningConstant:TopicDetailActivity.kt$TopicDetailActivity$private fun findScreen()</ID>
+    <ID>FunctionParameterNaming:MultilingualAnalytics.kt$content_formats: List&lt;String&gt;</ID>
+    <ID>FunctionParameterNaming:MultilingualAnalytics.kt$is_Exclusive: Boolean</ID>
+    <ID>FunctionParameterNaming:MultilingualAnalytics.kt$is_ExclusiveKoo: Boolean</ID>
+    <ID>GlobalCoroutineUsage:VideoPreLoadingService.kt$VideoPreLoadingService$GlobalScope.launch(Dispatchers.IO) { cacheVideo(dataSpec, progressListener) preCacheVideo(videosList) }</ID>
+    <ID>ImplicitDefaultLocale:LobbyAdapter.kt$LobbyAdapter.ViewHolder$String.format(" Name: %s Is following: %s", lobbyUser.name, lobbyUser.isFollowing)</ID>
+    <ID>ImplicitDefaultLocale:MultilingualActivity.kt$MultilingualActivity$String.format("Error Deleting Merged File: %s", e.message)</ID>
+    <ID>ImplicitDefaultLocale:UserRoomModel.kt$UserRoomModel$String.format("%s %s %s %s", userId, headline, isFollowing, roomType)</ID>
+    <ID>LargeClass:KooCreationFragment.kt$KooCreationFragment : BaseFragmentOnClickListenerTitleEditInterfacePollCreationCallBackPollOptionClickListener</ID>
+    <ID>LargeClass:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter : DiffUtilBackedAdapterIKooFeedAdapter</ID>
+    <ID>LargeClass:MultilingualActivity.kt$MultilingualActivity : BaseActivityKooCreationInterfaceLanguageSelectionListenerTranslationAdapterInterfaceOnCheckedChangeListenerTitleEditInterface</ID>
+    <ID>LargeClass:MultilingualViewModel.kt$MultilingualViewModel : MLKBaseViewModel</ID>
+    <ID>LongMethod:FirebaseRepository.kt$FirebaseRepository$fun init(room: ChatRoom, sender: Channel, receiver: Channel)</ID>
+    <ID>LongMethod:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$fun getMappedKooFeedData( followingFeedEntity: FollowingFeedEntity, position: Int, type: String, gson: Gson, accountHelper: IAccountHelper ): List&lt;IKooFeedItem&gt;</ID>
+    <ID>LongMethod:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$override fun onBind(entity: IFeedItem, position: Int)</ID>
+    <ID>LongMethod:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun onCreateViewHolder( parent: ViewGroup, viewType: Int ): BaseViewHolder&lt;IFeedItem&gt;</ID>
+    <ID>LongMethod:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$private fun onMenuItemClicked( finalChannelData: ChannelContentData, v: View, finalParentContentData: ChannelContentData? )</ID>
+    <ID>LongMethod:LanguageTabModel.kt$LanguageTabModel$ fun buildDataForUpload( isExclusive: Boolean, parentContentId: String?, reKooId: String?, kuMode: ChannelContentData.KuMode, commentPreference: Int, originalData: LanguageTabModel? ): Data.Builder?</ID>
+    <ID>LongMethod:LobbyAdapter.kt$LobbyAdapter.ViewHolder$fun bind(lobbyUser: UserRoomModel)</ID>
+    <ID>LongMethod:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$@SuppressLint("ClickableViewAccessibility") private fun showLanguages( languageList: List&lt;Language&gt;, layout: DragLinearLayout, isForActiveLanguages: Boolean )</ID>
+    <ID>LongMethod:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$private fun setColorRemotely()</ID>
+    <ID>LongMethod:MultilingualActivity.kt$MultilingualActivity$private fun initListeners()</ID>
+    <ID>LongMethod:MultilingualActivity.kt$MultilingualActivity$private fun subscribeToAttachments()</ID>
+    <ID>LongMethod:MultilingualActivity.kt$MultilingualActivity$private fun subscribeToExclusiveKooState()</ID>
+    <ID>LongMethod:MultilingualActivity.kt$MultilingualActivity$private fun updatePostButton()</ID>
+    <ID>LongMethod:MultilingualViewModel.kt$MultilingualViewModel$ fun doPost(multilingualPostValidation: MultilingualPostDetail)</ID>
+    <ID>LongMethod:MultilingualViewModel.kt$MultilingualViewModel$fun buildTransSearchObserver(languageCode: String)</ID>
+    <ID>LongMethod:MultilingualViewModel.kt$MultilingualViewModel$fun multiTranslateText()</ID>
+    <ID>LongMethod:RoomActivity.kt$RoomActivity$private fun subscribeUi()</ID>
+    <ID>LongParameterList:AutoLoginProfile.kt$AutoLoginProfile$( var firstName: String? = null, var lastName: String? = null, var phoneNumber: String? = null, var gender: String? = null, var street: String? = null, var city: String? = null, var zipcode: String? = null, var countryCode: String? = null, var facebookId: String? = null, var twitterId: String? = null, var email: String? = null, var url: String? = null, var avatarUrl: String? = null, var isTrueName: Boolean = false, var isAmbassador: Boolean = false, var companyName: String? = null, var jobTitle: String? = null, var payload: String? = null, var signature: String? = null, var signatureAlgorithm: String? = null )</ID>
+    <ID>LongParameterList:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$( val mContext: Context, val recyclerView: RecyclerView, val mFeedType: String, val adapterToFragment: AdapterToFragment, val baseFragment: BaseFragment, val isTopic: Boolean, val accountHelper: IAccountHelper, val configBasedElementStyle: IConfigBasedElementStyle )</ID>
+    <ID>LongParameterList:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$( userId: String?, followingStatus: Boolean, isShowNow: Boolean, blinkType: BigFollowButton.BlinkType, isDisabled: Boolean, allowUnfollowForBulkFollow: Boolean )</ID>
+    <ID>LongParameterList:LanguageTabModel.kt$LanguageTabModel$( isExclusive: Boolean, parentContentId: String?, reKooId: String?, kuMode: ChannelContentData.KuMode, commentPreference: Int, originalData: LanguageTabModel? )</ID>
+    <ID>LongParameterList:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$( parent: DragLinearLayout, child: ConstraintLayout, isAnimationRequired: Boolean, isLanguageActive: Boolean, isAddingView: Boolean, isPressed: Boolean )</ID>
+    <ID>LongParameterList:MultilingualAnalytics.kt$( selectedLanguage: List&lt;String&gt;, language: String, index: Int, is_Exclusive: Boolean, content_formats: List&lt;String&gt;, contentTitle: String?, originalContent: String?, originalContentIndex: Int, mode: String )</ID>
+    <ID>LongParameterList:TopicListItemAdapter.kt$TopicListItemAdapter$( private var list: List&lt;TopicListItemUi&gt;, private val section: String, private val sectionTag: String?, private val sectionPosition: Int, private val collectionId: String?, private val vm: TopicsBaseViewModel, private val activity: Activity, private val topicListAdapter: TopicListAdapter? = null, )</ID>
+    <ID>LoopWithTooManyJumpStatements:FeedFragmentUtil.kt$FeedFragmentUtil$for (i in findIndexOfFeedItem(list, interactionFeedItem)..list.size) { if (list[i] is KooFeedBottomItem) { break } else if (list[i] is KooFeedFollowButtonItem) { placedIndex = i break } }</ID>
+    <ID>MagicNumber:CoUsersListResponse.kt$CoUserStatus.Companion$3</ID>
+    <ID>MagicNumber:CoUsersListResponse.kt$CoUserStatus.Companion$4</ID>
+    <ID>MagicNumber:CoUsersListResponse.kt$CoUserStatus.Companion$5</ID>
+    <ID>MagicNumber:CoUsersListResponse.kt$CoUserStatus.DELETED$5</ID>
+    <ID>MagicNumber:CoUsersListResponse.kt$CoUserStatus.LOGGED_OUT$4</ID>
+    <ID>MagicNumber:CoUsersListResponse.kt$CoUserStatus.REVOKED$3</ID>
+    <ID>MagicNumber:ExclusiveMediaDialog.kt$ExclusiveMediaDialog$10000</ID>
+    <ID>MagicNumber:FirebaseRepository.kt$FirebaseRepository$1000</ID>
+    <ID>MagicNumber:GifViewModel.kt$GifViewModel$300</ID>
+    <ID>MagicNumber:IKooState.kt$KooState.GALLERY_IMAGE_ADDED$4</ID>
+    <ID>MagicNumber:IKooState.kt$KooState.GALLERY_VIDEO_ADDED$3</ID>
+    <ID>MagicNumber:IKooState.kt$KooState.GALLERY_VIDEO_AND_GALLERY_IMAGE_ADDED$8</ID>
+    <ID>MagicNumber:IKooState.kt$KooState.GALLERY_VIDEO_AND_GIF_ADDED$9</ID>
+    <ID>MagicNumber:IKooState.kt$KooState.GIF_ADDED$6</ID>
+    <ID>MagicNumber:IKooState.kt$KooState.LINK_AND_GALLERY_VIDEO_ADDED$7</ID>
+    <ID>MagicNumber:IKooState.kt$KooState.POLL_ADDED$5</ID>
+    <ID>MagicNumber:KooBindingAdapters.kt$KooBindingAdapters$15</ID>
+    <ID>MagicNumber:KooBindingAdapters.kt$KooBindingAdapters$3</ID>
+    <ID>MagicNumber:KooCommentPreferences.kt$KooCommentPreferences.ENABLE_NETWORK_ONLY$3</ID>
+    <ID>MagicNumber:KooCreationFragment.kt$KooCreationFragment$23</ID>
+    <ID>MagicNumber:KooCreationFragment.kt$KooCreationFragment$3</ID>
+    <ID>MagicNumber:KooCreationFragment.kt$KooCreationFragment$6</ID>
+    <ID>MagicNumber:KooCreationPreviewAdapter.kt$KooCreationPreviewAdapter.KooCreationPreviewLayout$16</ID>
+    <ID>MagicNumber:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$24</ID>
+    <ID>MagicNumber:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$7</ID>
+    <ID>MagicNumber:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$15</ID>
+    <ID>MagicNumber:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$20</ID>
+    <ID>MagicNumber:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$2000</ID>
+    <ID>MagicNumber:KooFeedCommentViewHolder.kt$KooFeedCommentViewHolder$300</ID>
+    <ID>MagicNumber:KooFeedMoreLikeThisViewHolder.kt$KooFeedMoreLikeThisViewHolder$15</ID>
+    <ID>MagicNumber:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$24</ID>
+    <ID>MagicNumber:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$7</ID>
+    <ID>MagicNumber:KooFeedShareOnFBViewHolder.kt$KooFeedShareOnFBViewHolder$6</ID>
+    <ID>MagicNumber:KooFeedSuperExpertViewHolder.kt$KooFeedSuperExpertViewHolder$15</ID>
+    <ID>MagicNumber:KooFeedSuperExpertViewHolder.kt$KooFeedSuperExpertViewHolder$16f</ID>
+    <ID>MagicNumber:KooFeedSuperExpertViewHolder.kt$KooFeedSuperExpertViewHolder$5</ID>
+    <ID>MagicNumber:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$7f</ID>
+    <ID>MagicNumber:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$999</ID>
+    <ID>MagicNumber:LanguageContentAdapter.kt$3</ID>
+    <ID>MagicNumber:LanguageTabModel.kt$LanguageTabModel$4</ID>
+    <ID>MagicNumber:LobbyActivity.kt$LobbyActivity$1000f</ID>
+    <ID>MagicNumber:LobbyViewModel.kt$LobbyViewModel$20</ID>
+    <ID>MagicNumber:MLKPostWorker.kt$MLKPostWorker$405</ID>
+    <ID>MagicNumber:MLKPostWorker.kt$MLKPostWorker$500</ID>
+    <ID>MagicNumber:MediaTrimState.kt$MediaLoadingState.ERROR$3</ID>
+    <ID>MagicNumber:MediaUploadProgressDialog.kt$MediaUploadProgressDialog$100</ID>
+    <ID>MagicNumber:MediaUploadProgressDialog.kt$MediaUploadProgressDialog$100.0</ID>
+    <ID>MagicNumber:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$1500</ID>
+    <ID>MagicNumber:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS.&lt;no name provided&gt;$100</ID>
+    <ID>MagicNumber:MultilingualActivity.kt$MultilingualActivity$1000</ID>
+    <ID>MagicNumber:MultilingualActivity.kt$MultilingualActivity$1024</ID>
+    <ID>MagicNumber:MultilingualActivity.kt$MultilingualActivity$20</ID>
+    <ID>MagicNumber:MultilingualActivity.kt$MultilingualActivity$3</ID>
+    <ID>MagicNumber:MultilingualActivity.kt$MultilingualActivity$3000</ID>
+    <ID>MagicNumber:MultilingualActivity.kt$MultilingualActivity$4</ID>
+    <ID>MagicNumber:MultilingualContents.kt$PollDetails$24</ID>
+    <ID>MagicNumber:MultilingualContents.kt$PollDetails$60</ID>
+    <ID>MagicNumber:MultilingualViewModel.kt$MultilingualViewModel$3</ID>
+    <ID>MagicNumber:MultilingualViewModel.kt$MultilingualViewModel$300</ID>
+    <ID>MagicNumber:NewMessageActivity.kt$NewMessageActivity$300</ID>
+    <ID>MagicNumber:OnTouchAnimatorListener.kt$OnTouchAnimatorListener$0.75f</ID>
+    <ID>MagicNumber:OnTouchAnimatorListener.kt$OnTouchAnimatorListener$150</ID>
+    <ID>MagicNumber:OnTouchAnimatorListener.kt$OnTouchAnimatorListener$200</ID>
+    <ID>MagicNumber:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$100</ID>
+    <ID>MagicNumber:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$1000</ID>
+    <ID>MagicNumber:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$200</ID>
+    <ID>MagicNumber:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$300</ID>
+    <ID>MagicNumber:PeoplePreferencesAdapter.kt$PeoplePreferencesAdapter.PeoplePreferenceViewHolder$15</ID>
+    <ID>MagicNumber:PeoplePreferencesAdapter.kt$PeoplePreferencesAdapter.PeoplePreferenceViewHolder$5</ID>
+    <ID>MagicNumber:PollPercentageCalculator.kt$PollPercentageCalculator$100</ID>
+    <ID>MagicNumber:PollPercentageCalculator.kt$PollPercentageCalculator$3</ID>
+    <ID>MagicNumber:PreferenceSelectionActivity.kt$PreferenceSelectionActivity$1000</ID>
+    <ID>MagicNumber:PreferenceSelectionActivity.kt$PreferenceSelectionActivity$10000</ID>
+    <ID>MagicNumber:PreviewFragment.kt$PreviewFragment$70</ID>
+    <ID>MagicNumber:RoomActivity.kt$RoomActivity$200</ID>
+    <ID>MagicNumber:RoomActivity.kt$RoomActivity$25</ID>
+    <ID>MagicNumber:RoomActivity.kt$RoomActivity$500</ID>
+    <ID>MagicNumber:RoomViewState.kt$ChatRoomStatus.DELETED$5</ID>
+    <ID>MagicNumber:RoomViewState.kt$ChatRoomStatus.INACTIVE$3</ID>
+    <ID>MagicNumber:RoomViewState.kt$ChatRoomStatus.REJECT$4</ID>
+    <ID>MagicNumber:TopicListItemAdapter.kt$TopicListItemAdapter.TopicListItemViewHolder$15</ID>
+    <ID>MagicNumber:TopicListingFragment.kt$TopicListingFragment.&lt;no name provided&gt;$5</ID>
+    <ID>MagicNumber:TopicSegmentViewHolder.kt$TopicSegmentViewHolder$8</ID>
+    <ID>MagicNumber:UserStatus.kt$UserStatus.DELETED$3</ID>
+    <ID>MagicNumber:VideoPreLoadingService.kt$VideoPreLoadingService$100.0</ID>
+    <ID>MandatoryBracesIfStatements:KooCreationFragment.kt$KooCreationFragment$binding.pollCreationView.refillFillPollOptions( it.options, it.duration )</ID>
+    <ID>MandatoryBracesIfStatements:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$KooFeedMultiLingualItem( kooFeedEntityItemModel )</ID>
+    <ID>MandatoryBracesIfStatements:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$getMoreLikeThisItem(kooFeedEntityItemModel)?.let { feedItems.add(it) if (kooFeedEntityItemModel.followingFeedEntity.kooContent().isCommentDisabled) { feedItems.add(KooFeedEmptySpaceItem(kooFeedEntityItemModel)) } }</ID>
+    <ID>MandatoryBracesIfStatements:KooFeedPollViewHolder.kt$KooFeedPollViewHolder$pollBinding.tvEndingAt.text = itemView.context.resources.getString(R.string.poll_finished)</ID>
+    <ID>MandatoryBracesIfStatements:KooFeedPollViewHolder.kt$KooFeedPollViewHolder$tvEndingAt.text = Utils.formatTimeLeftPoll( itemView.context, pollData.endingAt )</ID>
+    <ID>MandatoryBracesIfStatements:KooFeedRecyclerViewHolder.kt$KooFeedRecyclerViewHolder$kooFeedAdapter?.getAdapterInteractionInterface() ?.handleHashtagClick( text.toString(), Event.KOO_CARD, false, getEntity().followingFeedEntity.isExclusiveKoo )</ID>
+    <ID>MandatoryBracesIfStatements:KooFeedRecyclerViewHolder.kt$KooFeedRecyclerViewHolder$kooFeedAdapter?.getAdapterInteractionInterface() ?.handleMentionClick(text.toString())</ID>
+    <ID>MandatoryBracesIfStatements:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$android.widget.Toast.makeText( v.context, R.string.group_koos_delete_message, android.widget.Toast.LENGTH_LONG ).show()</ID>
+    <ID>MandatoryBracesIfStatements:LanguageTabModel.kt$LanguageTabModel$original?.multilingualContentData?.audioData?.findContent() ?: data</ID>
+    <ID>MandatoryBracesIfStatements:MLKPostWorker.kt$MLKPostWorker$channelContentData.linkImage = kooModel.media.linkImage</ID>
+    <ID>MandatoryBracesIfStatements:MLKPostWorker.kt$MLKPostWorker$channelContentData.linkName = kooModel.media.linkName</ID>
+    <ID>MandatoryBracesIfStatements:MLKPostWorker.kt$MLKPostWorker$channelContentData.linkTitle = kooModel.media.linkTitle</ID>
+    <ID>MandatoryBracesIfStatements:MLKPostWorker.kt$MLKPostWorker$channelContentData.linkType = kooModel.media.linkType.name</ID>
+    <ID>MandatoryBracesIfStatements:MultilingualActivity.kt$MultilingualActivity$intent.putExtra( RecognizerIntent.EXTRA_LANGUAGE, "$langCode-IN" )</ID>
+    <ID>MandatoryBracesIfStatements:MultilingualActivity.kt$MultilingualActivity$resources.getColor( R.color.grey_bottomsheet_peek_text )</ID>
+    <ID>MandatoryBracesIfStatements:MultilingualExtensions.kt$&lt;no name provided&gt;$return</ID>
+    <ID>MandatoryBracesIfStatements:TopicSegmentViewHolder.kt$TopicSegmentViewHolder$R.dimen.textsize_16sp</ID>
+    <ID>MaxLineLength:AspectConstraintImageView.kt$AspectConstraintImageView$this.setMeasuredDimension(width, computeImageHeightForScreennWidth(drawable.intrinsicHeight, drawable.intrinsicWidth, MeasureSpec.getSize(widthMeasureSpec)))</ID>
+    <ID>MaxLineLength:KooFeedBaseViewHolder.kt$KooFeedBaseViewHolder$)</ID>
+    <ID>MaxLineLength:KooFeedInteractionViewHolder.kt$KooFeedInteractionViewHolder$handler?.postDelayed({ blinkLike(entity.getFeedEntity().kooContent()) }, FirebaseRemoteConfig.getInstance().getLong(FireBaseRemoteConfigHelper.LIKE_BLINK_AFTER_COMMENT_ANIMATION_DURATION))</ID>
+    <ID>MaxLineLength:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$return</ID>
+    <ID>MaxLineLength:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$OptionsPopupBuilder.MENU_DELETE_CONTENT</ID>
+    <ID>MaxLineLength:LanguageTabModel.kt$LanguageTabModel$builder.putStringArray(Statics.BUNDLE_VIDEO_PART_FILES, if (VoiceMessageRecordManager.getInstance() != null) VoiceMessageRecordManager.getInstance().tempRecordingFiles else arrayOf())</ID>
+    <ID>MaxLineLength:LanguageTabModel.kt$LanguageTabModel$updateContentFormat(if (recordingState == Statics.RECORD_TYPE_VIDEO) ContentFormat.Video() else ContentFormat.GalleryVideo(), data != null, isUsedFromOriginal)</ID>
+    <ID>MaxLineLength:MultilingualActivity.kt$MultilingualActivity$if</ID>
+    <ID>MaxLineLength:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$var marginleft = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, resources.getDimension(R.dimen.dimen_7dp), resources.displayMetrics).toInt()</ID>
+    <ID>MaxLineLength:RoomActivity.kt$RoomActivity$chat_button_text_bottom.setTextColor(Color.parseColor(FirebaseRemoteConfig.getInstance().getString(FireBaseRemoteConfigHelper.FOLLOW_TEXT_COLOR)))</ID>
+    <ID>MaxLineLength:RoomActivity.kt$RoomActivity$chat_button_text_bottom.setTextColor(Color.parseColor(FirebaseRemoteConfig.getInstance().getString(FireBaseRemoteConfigHelper.FOLLOW_TEXT_COLOR_DARK)))</ID>
+    <ID>MaxLineLength:TopicListAdapter.kt$TopicListAdapter.TopicViewHolder$// ImpressionUsecase.logTopicItemView(context, item.list[adapterPosition],"ViewTopic",TopicScreen.findLandedScreen(isFromTab),adapterPosition.toString(),item.collectionTag,item)</ID>
+    <ID>MayBeConst:MultilingualActivity.kt$MultilingualActivity.Companion$private val REQUEST_PREFERENCE_SETTING: Int = 1</ID>
+    <ID>MemberNameEqualsClassName:KooCreationEntityMap.kt$KooCreationEntityMap.Companion$val kooCreationEntityMap: HashMap&lt;String, KooCreationEntity&gt; = hashMapOf()</ID>
+    <ID>NestedBlockDepth:FirebaseRepository.kt$FirebaseRepository$fun init(room: ChatRoom, sender: Channel, receiver: Channel)</ID>
+    <ID>NestedBlockDepth:FirebaseRepository.kt$FirebaseRepository$private fun formatChatResult(messages: List&lt;ChatMessage&gt;?)</ID>
+    <ID>NestedBlockDepth:KooCreationFragment.kt$KooCreationFragment$override fun handleTitleTextFromText(editText: EditText)</ID>
+    <ID>NestedBlockDepth:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$override fun onBind(entity: IFeedItem, position: Int)</ID>
+    <ID>NestedBlockDepth:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun getPositionForFeed(id: String): Int</ID>
+    <ID>NestedBlockDepth:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun onCreateViewHolder( parent: ViewGroup, viewType: Int ): BaseViewHolder&lt;IFeedItem&gt;</ID>
+    <ID>NestedBlockDepth:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$private fun animateAndAddView( parent: DragLinearLayout, child: ConstraintLayout, isAnimationRequired: Boolean, isLanguageActive: Boolean, isAddingView: Boolean, isPressed: Boolean )</ID>
+    <ID>NestedBlockDepth:MultilingualActivity.kt$MultilingualActivity$override fun dispatchTouchEvent(ev: MotionEvent): Boolean</ID>
+    <ID>NestedBlockDepth:MultilingualActivity.kt$MultilingualActivity$override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)</ID>
+    <ID>NestedBlockDepth:MultilingualActivity.kt$MultilingualActivity$private fun handleGallerySharing()</ID>
+    <ID>NestedBlockDepth:MultilingualActivity.kt$MultilingualActivity$private fun showAllIndicatorDot()</ID>
+    <ID>NestedBlockDepth:TopicDetailActivity.kt$TopicDetailActivity$override fun onFeedMetaReceive(meta: FeedMeta?)</ID>
+    <ID>NestedBlockDepth:TopicListingViewModel.kt$TopicListingViewModel$private fun buildTopicListingFromResponse(feed: UserFeed, topicType: Int)</ID>
+    <ID>NotImplementedDeclaration:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$TODO("Not yet implemented")</ID>
+    <ID>NotImplementedDeclaration:StateGalleryImageAdded.kt$StateGalleryImageAdded$TODO("Not yet implemented")</ID>
+    <ID>NotImplementedDeclaration:StateGalleryVideoAndGalleryImageAdded.kt$StateGalleryVideoAndGalleryImageAdded$TODO("Not yet implemented")</ID>
+    <ID>NotImplementedDeclaration:StateGifAdded.kt$StateGifAdded$TODO("Not yet implemented")</ID>
+    <ID>NotImplementedDeclaration:StateLinkAndGalleryVideoAdded.kt$StateLinkAndGalleryVideoAdded$TODO("Not yet implemented")</ID>
+    <ID>NotImplementedDeclaration:StatePollAdded.kt$StatePollAdded$TODO("Not yet implemented")</ID>
+    <ID>OptionalWhenBraces:ChatAdapter.kt$ChatAdapter$ChatUiItem.VIEW_RECEIVE.ordinal -&gt; { (holder as ReceiveViewHolder).bind(chatMessage) }</ID>
+    <ID>OptionalWhenBraces:ChatAdapter.kt$ChatAdapter$ChatUiItem.VIEW_RECEIVE.ordinal -&gt; { ReceiveViewHolder(inflater, parent) }</ID>
+    <ID>OptionalWhenBraces:ChatAdapter.kt$ChatAdapter$else -&gt; { (holder as SentViewHolder).bind(chatMessage) }</ID>
+    <ID>OptionalWhenBraces:ChatAdapter.kt$ChatAdapter$else -&gt; { SentViewHolder(inflater, parent) }</ID>
+    <ID>OptionalWhenBraces:FirebaseRepository.kt$FirebaseRepository$true -&gt; { when ((lastMessageTs - item.timestamp) &lt; TIME_GROUP_THRESHOLD) { true -&gt; false else -&gt; { lastMessageTs = item.timestamp true } } }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_ASSAMESE -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_BENGALI -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_ENGLISH -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_GUJARATI -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_HINDI -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_KANNADA -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_MARATHI -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_TAMIL -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LANGUAGE_CODE_TELUGU -&gt; { bindTranslationHeader() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.EMOJI -&gt; { updateEmoji() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.GIF_ATTACH -&gt; { updateUiOnGif(it.data.findGIFContent(), isToCopyOriginal) }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.IMAGE_ATTACH, LanguageTabModel.IMAGE_CLONE -&gt; { updateUiOnImageClone( it.data.findImageContent()!!, isToCopyOriginal, it.requestCode == LanguageTabModel.IMAGE_CLONE ) }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.LINK_ATTACH, LanguageTabModel.LINK_CLONE -&gt; { updateAddLinkView( it.data.findLink(), isToCopyOriginal, it.requestCode == LanguageTabModel.LINK_CLONE ) }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.POLL_ATTACH, LanguageTabModel.POLL_CLONE -&gt; { updatePollUi(contentData.pollDetail.findContent()) }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.SPEECH_TO_TEXT -&gt; { updateUiForSpeechToText(contentData, isToCopyOriginal) }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.TEXT_TRANSLATE -&gt; { updateUiOnTextTranslate(contentData, isToCopyOriginal) }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$LanguageTabModel.TEXT_VALIDATE -&gt; { updateTextBox(it.data, isToCopyOriginal, false) }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$R.id.translateFromOriginal -&gt; { onTranslateClick() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment$R.id.tvRemoveTranslation -&gt; { onRemoveClick() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment.&lt;no name provided&gt;$Statics.RECORD_TYPE_AUDIO -&gt; { kooCreationImpl?.startAudioRecord() }</ID>
+    <ID>OptionalWhenBraces:KooCreationFragment.kt$KooCreationFragment.&lt;no name provided&gt;$Statics.RECORD_TYPE_VIDEO -&gt; { findTabData()?.apply { kooCreationImpl?.openTrimActivity(false) } }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.ACTION_BUTTON -&gt; { feedItems.add( KooFeedActionButtonItem( kooFeedEntityItemModel, FirebaseRemoteConfig.getInstance() .getBoolean(FireBaseRemoteConfigHelper.BULK_FOLLOW_BIG_BUTTON_AT_BOTTOM) ) ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.CATEGORIES_FILTER -&gt; { feedItems.add( KooFeedFiltersItem( KooFeedEntityItemModel( followingFeedEntity, position, type ) ) ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.CHANNEL_HASHTAG, FeedItem.UI_ITEM_TYPES.EXPLORE_HASHTAG -&gt; { feedItems.add(KooFeedExploreHashTagsItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.EXPLORE_TAGS -&gt; { feedItems.add(KooFeedExploreTagsItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.FIND_FRIENDS_ACTION_BUTTON -&gt; { feedItems.add( KooFeedFindFriendButtonItem( kooFeedEntityItemModel ) ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.GENERIC_BANNER -&gt; { feedItems.add(KooFeedGenericBannerItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.HASHTAG_CAROUSEL -&gt; { feedItems.add(KooFeedHashTagCarouselItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.INACTIVE_KOOER_HORIZONTAL, FeedItem.UI_ITEM_TYPES.USERS_LIST -&gt; { feedItems.add( KooFeedListSectionItem( KooFeedEntityItemModel( followingFeedEntity, position, type ) ) ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.PEOPLE_PREFERENCES -&gt; { feedItems.add(KooFeedPeoplePreferenceItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.SINGLE_CHANNEL_BIG -&gt; { feedItems.add(KooFeedSingleUserBigItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.SINGLE_USER -&gt; { feedItems.add( KooFeedExpertItem( KooFeedExpertItemModel( followingFeedEntity, followingFeedEntity.superExperts[0], position, type ) ) ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.TEXT_PLACEHOLDER -&gt; { feedItems.add(KooFeedTextPlaceHolderItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.TOPIC_SEGMENT_TITLES -&gt; { feedItems.add(KooFeedTopicSegmentItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.USER_CONFIG_DETAIL -&gt; { feedItems.add(KooFeedExploreFurtherItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$FeedItem.UI_ITEM_TYPES.VIEW_WEB_WIDGET -&gt; { feedItems.add(KooFeedWebWidgetItem(kooFeedEntityItemModel)) }</ID>
+    <ID>OptionalWhenBraces:KooFeedCommentViewHolder.kt$KooFeedCommentViewHolder$R.id.creation_view, R.id.creation_view_layout -&gt; { kooFeedAdapter?.getAdapterInteractionInterface()?.handleCommentCreation( entity.getFeedEntity().kooContent(), Event.KOO_CARD, false ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedInteractionViewHolder.kt$KooFeedInteractionViewHolder$ShareUtils.SHARE_MODE_ALL -&gt; { kooFeedAdapter?.getAdapterInteractionInterface() ?.handleShareUrl(itemData, Event.KOO_CARD) }</ID>
+    <ID>OptionalWhenBraces:KooFeedInteractionViewHolder.kt$KooFeedInteractionViewHolder$ShareUtils.SHARE_MODE_FB -&gt; { kooFeedAdapter?.getAdapterInteractionInterface() ?.handleFacebookClick(itemData, Event.KOO_CARD) }</ID>
+    <ID>OptionalWhenBraces:KooFeedInteractionViewHolder.kt$KooFeedInteractionViewHolder$else -&gt; { ShareUtils.shareViaApp( itemView.context, ShareUtils.getShareMessage(itemData, itemView.context), shareMode ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedJustificationTextViewHolder.kt$KooFeedJustificationTextViewHolder$FollowingFeedEntity.TYPE_COMMENT, FollowingFeedEntity.TYPE_THREAD_COMMENT -&gt; { ivKooHeader.setImageResource(R.drawable.ic_comment_icon) }</ID>
+    <ID>OptionalWhenBraces:KooFeedJustificationTextViewHolder.kt$KooFeedJustificationTextViewHolder$FollowingFeedEntity.TYPE_LIKE, FollowingFeedEntity.TYPE_THREAD_LIKE -&gt; { ivKooHeader.setImageResource(R.drawable.ic_like_icon___default_state) }</ID>
+    <ID>OptionalWhenBraces:KooFeedJustificationTextViewHolder.kt$KooFeedJustificationTextViewHolder$FollowingFeedEntity.TYPE_REACTION, FollowingFeedEntity.TYPE_THREAD_REACTION -&gt; { ivKooHeader.setImageResource(R.drawable.ic_reaction_feed) }</ID>
+    <ID>OptionalWhenBraces:KooFeedJustificationTextViewHolder.kt$KooFeedJustificationTextViewHolder$FollowingFeedEntity.TYPE_REKOO, FollowingFeedEntity.TYPE_THREAD_REKOO -&gt; { ivKooHeader.setImageResource(R.drawable.ic_re_koo_icon) }</ID>
+    <ID>OptionalWhenBraces:KooFeedJustificationTextViewHolder.kt$KooFeedJustificationTextViewHolder$FollowingFeedEntity.TYPE_SHARE -&gt; { ivKooHeader.setImageResource(R.drawable.ic_share_feed) }</ID>
+    <ID>OptionalWhenBraces:KooFeedMoreLikeThisViewHolder.kt$KooFeedMoreLikeThisViewHolder$R.id.more_tv, R.id.images_rl -&gt; { kooFeedAdapter?.getAdapterInteractionInterface()?.handleMoreLikeThis(getEntity().getKooContent()) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$FeedItem.UI_ITEM_TYPES.ACTION_BUTTON -&gt; { if (TextUtils.equals(actionData?.id, id)) { i } else { -1 } }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$FeedItem.UI_ITEM_TYPES.KOO, FeedItem.UI_ITEM_TYPES.THREAD -&gt; { getPositionWithMatchingId(qnaEntity, kooFeedItem, id, i) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_creation_viewholder -&gt; { return KooFeedCreationViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_audio_item_layout -&gt; { return KooFeedAudioPreviewViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_comment_layout -&gt; { return KooFeedCommentViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_facebook_share_layout -&gt; { return KooFeedShareOnFBViewHolder(binding, this, configBasedElementStyle) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_follow_btn -&gt; { return KooFeedFollowButtonViewHolder( binding, this, getFeedWidgetUsersListener() ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_interaction_layout -&gt; { return KooFeedInteractionViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_justification_layout -&gt; { return KooFeedJustificationTextViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_link_preview_layout -&gt; { return KooFeedLinkViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_more_like_this -&gt; { return KooFeedMoreLikeThisViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_multi_lingual_layout -&gt; { return KooFeedMultiLingualViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_poll_layout -&gt; { return KooFeedPollViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_rekoo_layout -&gt; { return KooFeedReKooViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_section_label -&gt; { return KooFeedSectionLabelViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_superexpert_list_item -&gt; { return KooFeedSuperExpertViewHolder( binding, this, getFeedWidgetUsersListener(), getAdapterInteractionInterface() ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_user_layout -&gt; { return KooFeedUserViewHolder(binding, this, accountHelper) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_video_preview_layout -&gt; { return KooFeedVideoViewHolder(binding, binding.root, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$R.layout.koo_feed_view_more_layout -&gt; { return KooFeedViewMoreViewHolder(binding, this) }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$else -&gt; { -1 }</ID>
+    <ID>OptionalWhenBraces:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$is TopicSegmentViewHolder -&gt; { sendGlance( CommonEventAttrs( findWidgetPath(isTopic), findMode(isTopic), if (isTopic) Event.FEED else Event.TOPIC, findTopicWidgetLocation(isTopic), null ), list[position].getFeedEntity().topics.size, position, holder.isFollowingAnyTopics(list[position].getFeedEntity().topics) ) }</ID>
+    <ID>OptionalWhenBraces:KooFeedSectionLabelViewHolder.kt$KooFeedSectionLabelViewHolder$R.id.header_icon_right -&gt; { if (kooFeedAdapter?.getFeedForPosition(absoluteAdapterPosition) != null) { kooFeedAdapter?.getFeedWidgetUsersListener() ?.handleViewAllSection( kooFeedAdapter?.getFeedForPosition(absoluteAdapterPosition), Event.KOO_CARD ) } }</ID>
+    <ID>OptionalWhenBraces:KooFeedShareOnFBViewHolder.kt$KooFeedShareOnFBViewHolder$R.id.btnShareFacebook -&gt; { if (FirebaseRemoteConfig.getInstance().getBoolean(FireBaseRemoteConfigHelper.WHATSAPP_FACEBOOK_BIG_BUTTON)) { val imageUri = Utils.generateImageURIFromView(itemView.context, itemView.rootView) kooFeedAdapter?.getAdapterInteractionInterface() ?.handleWhatsappClick(entity.getFeedEntity().kooContent(), imageUri, Event.KOO_CARD_BIG) } else { kooFeedAdapter?.getAdapterInteractionInterface() ?.handleFacebookClick(entity.getFeedEntity().kooContent(), Event.KOO_CARD_BIG) } }</ID>
+    <ID>OptionalWhenBraces:KooFeedShareOnFBViewHolder.kt$KooFeedShareOnFBViewHolder$R.id.btnWhatsappStatus -&gt; { kooFeedAdapter?.getAdapterInteractionInterface() ?.handleSetWhatsappStatus(Event.KOO_CARD_BIG, entity.getFeedEntity().kooContent()) }</ID>
+    <ID>OptionalWhenBraces:KooFeedUserViewHolder.kt$KooFeedUserViewHolder$R.id.frame_koo_tag -&gt; { kooFeedAdapter?.getAdapterInteractionInterface() ?.handleKooTagClick(entity.getFeedEntity().getmQnAFeedEntity()?.mContentData) }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$AUDIO_CLONE -&gt; { when { isAudioPresent() -&gt; R.string.do_you_want_to_replace_content isVideoPresent() -&gt; R.string.cannot_import_audio_as_video_in_koo isPollAdded() -&gt; R.string.cannot_insert_audio_as_poll_in_koo else -&gt; null } }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$AUDIO_THOUGHT -&gt; { when { isVideoPresent() -&gt; R.string.cannot_insert_audio_as_video_in_koo isPollAdded() -&gt; R.string.cannot_insert_audio_as_poll_in_koo else -&gt; null } }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$IMAGE_CLONE -&gt; { when { isImageAdded() -&gt; R.string.do_you_want_to_replace_content isLinkAdded() -&gt; R.string.cannot_import_photos_as_link_in_koo isPollAdded() -&gt; R.string.cannot_import_photos_as_poll_in_koo else -&gt; null } }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$LINK_CLONE -&gt; { when { isLinkAdded() -&gt; R.string.do_you_want_to_replace_content isImageAdded() -&gt; R.string.cannot_import_link_as_photos_in_koo isPollAdded() -&gt; R.string.cannot_import_link_as_poll_in_koo else -&gt; null } }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$POLL_CLONE -&gt; { when { isPollAdded() -&gt; R.string.do_you_want_to_replace_content else -&gt; null } }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$VIDEO_CLONE -&gt; { when { isVideoPresent() -&gt; R.string.do_you_want_to_replace_content isAudioPresent() -&gt; R.string.cannot_import_video_as_audio_in_koo isPollAdded() -&gt; R.string.cannot_insert_video_as_poll_in_koo else -&gt; null } }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$VIDEO_THOUGHT -&gt; { when { isAudioPresent() -&gt; R.string.cannot_insert_video_as_audio_in_koo isPollAdded() -&gt; R.string.cannot_insert_video_as_poll_in_koo else -&gt; null } }</ID>
+    <ID>OptionalWhenBraces:LanguageTabModel.kt$LanguageTabModel$is LanguageTabModel -&gt; { this.code == other.code }</ID>
+    <ID>OptionalWhenBraces:LobbyActivity.kt$LobbyActivity$R.id.menu_settings -&gt; { openChatSettings() }</ID>
+    <ID>OptionalWhenBraces:LobbyActivity.kt$LobbyActivity$REQUEST_CODE_ADD_CONVERSATION -&gt; { if (resultCode == Activity.RESULT_OK) { val channel = data?.getParcelableExtra&lt;Channel&gt;(Statics.BUNDLE_CHANNELOBJ) viewModel.createRoom(channel) } }</ID>
+    <ID>OptionalWhenBraces:LobbyFragment.kt$LobbyFragment.&lt;no name provided&gt;$0 -&gt; { showDeleteMessageConfirmation(room) }</ID>
+    <ID>OptionalWhenBraces:MultilingualActivity.kt$MultilingualActivity$LanguageTabModel.TabState.ACTIVE -&gt; { title?.setTextColor(resources.getColor(R.color.appColorTextActionable)) }</ID>
+    <ID>OptionalWhenBraces:MultilingualActivity.kt$MultilingualActivity$Statics.REQ_CODE_GALLERY_IMAGE -&gt; { if (it.hasExtra(Statics.BUNDLE_CAPTURED_PIC_FILE_NAME)) { var imagelist: ArrayList&lt;String&gt; = it.getStringArrayListExtra(Statics.BUNDLE_CAPTURED_PIC_FILE_NAME) ?: arrayListOf() if (imagelist != null &amp;&amp; imagelist.size &gt; 0) { viewModel.updateImages( it.getStringArrayListExtra(Statics.BUNDLE_CAPTURED_PIC_FILE_NAME) ?: arrayListOf(), null ) } } }</ID>
+    <ID>OptionalWhenBraces:MultilingualActivity.kt$MultilingualActivity$Statics.RESULT_CODE_SPEECH_TO_TEXT -&gt; { viewModel.updateTextToSpeech(it.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)) }</ID>
+    <ID>OptionalWhenBraces:MultilingualActivity.kt$MultilingualActivity$else -&gt; { title?.setTextColor(resources.getColor(R.color.appColorTextCaption)) }</ID>
+    <ID>OptionalWhenBraces:MultilingualViewModel.kt$MultilingualViewModel$KuMode.INDEPENDENT -&gt; { prePopulateKooData(getAnswerCreationEntity()) }</ID>
+    <ID>OptionalWhenBraces:MultilingualViewModel.kt$MultilingualViewModel$LanguageTabModel.AUDIO_THOUGHT -&gt; { updateAudio( findOriginalLanguageTab(), null, Statics.RECORD_TYPE_DEFAULT, false ) }</ID>
+    <ID>OptionalWhenBraces:MultilingualViewModel.kt$MultilingualViewModel$LanguageTabModel.VIDEO_THOUGHT -&gt; { updateVideo( findOriginalLanguageTab(), null, Statics.RECORD_TYPE_DEFAULT, false ) }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity$RoomViewState.CHAT_BLOCKED -&gt; { if (it.data is Boolean) { showInfoTextUi(it.data as Boolean, R.string.chat_blocked) } }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity$RoomViewState.CHAT_NOT_STARTED -&gt; { if (it.data is Boolean) { showStartChatUi(it.data as Boolean) } }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity$RoomViewState.CHAT_TURNED_OFF -&gt; { showInfoTextUi(true, R.string.current_user_chat_turned_off) }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity$RoomViewState.RECEIVER_REQUEST -&gt; { if (it.data is Boolean) { showRequestUi(it.data as Boolean) } }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity$RoomViewState.RECEIVER_REQUESTED -&gt; { if (it.data is Boolean) { showRequestedUi(it.data as Boolean) } }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity$RoomViewState.SENDER_APPROVE -&gt; { if (it.data is Boolean) { showApproveUi(it.data as Boolean) } }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity$RoomViewState.SHOW_CHAT -&gt; { if (it.data is Boolean) { showChatUi(it.data as Boolean) } }</ID>
+    <ID>OptionalWhenBraces:RoomActivity.kt$RoomActivity.&lt;no name provided&gt;$0 -&gt; { showDeleteMessageConfirmation(message) }</ID>
+    <ID>OptionalWhenBraces:SectionToWidgetMapper.kt$SectionToWidgetMapper$TextUtils.equals( followingFeedEntity.sectionType, FollowingFeedEntity.FEED_SECTION_TYPE_TOP_CONTRIBUTORS ) -&gt; { FeedUsersWidget.WidgetType.LATEST_EXPERTS }</ID>
+    <ID>OptionalWhenBraces:SectionToWidgetMapper.kt$SectionToWidgetMapper$TextUtils.equals( followingFeedEntity.sectionType, FollowingFeedEntity.TYPE_NEW_USERS ) -&gt; { FeedUsersWidget.WidgetType.NEW_USER }</ID>
+    <ID>OptionalWhenBraces:SectionToWidgetMapper.kt$SectionToWidgetMapper$TextUtils.equals( followingFeedEntity.sectionType, FollowingFeedEntity.TYPE_TOP_VOKERS ) -&gt; { FeedUsersWidget.WidgetType.TOP_VOKERS }</ID>
+    <ID>OptionalWhenBraces:SectionToWidgetMapper.kt$SectionToWidgetMapper$else -&gt; { FeedUsersWidget.WidgetType.LATEST_EXPERTS }</ID>
+    <ID>OptionalWhenBraces:StateGalleryVideoAdded.kt$StateGalleryVideoAdded$else -&gt; { this }</ID>
+    <ID>OptionalWhenBraces:StateGalleryVideoAdded.kt$StateGalleryVideoAdded$is KooMediaActions.AddVideo -&gt; { StateGalleryVideoAdded() }</ID>
+    <ID>OptionalWhenBraces:StateGalleryVideoAdded.kt$StateGalleryVideoAdded$is KooMediaActions.RemoveVideo -&gt; { StateInitial() }</ID>
+    <ID>OptionalWhenBraces:StateInitial.kt$StateInitial$else -&gt; { this }</ID>
+    <ID>OptionalWhenBraces:StateInitial.kt$StateInitial$is KooMediaActions.AddLink -&gt; { StateLinkAdded() }</ID>
+    <ID>OptionalWhenBraces:StateInitial.kt$StateInitial$is KooMediaActions.AddVideo -&gt; { StateGalleryVideoAdded() }</ID>
+    <ID>OptionalWhenBraces:StateLinkAdded.kt$StateLinkAdded$else -&gt; { this }</ID>
+    <ID>OptionalWhenBraces:StateLinkAdded.kt$StateLinkAdded$is KooMediaActions.AddVideo -&gt; { StateLinkAndGalleryVideoAdded() }</ID>
+    <ID>OptionalWhenBraces:StateLinkAdded.kt$StateLinkAdded$is KooMediaActions.RemoveLink -&gt; { StateInitial() }</ID>
+    <ID>OptionalWhenBraces:TopicListingFragment.kt$TopicListingFragment$ResourceState.LOADING -&gt; { noFollowersLayout.visible(false) }</ID>
+    <ID>OptionalWhenBraces:TopicListingFragment.kt$TopicListingFragment$else -&gt; { Logger.d(TAG, "observeLoadingState: ${it.state} not handled") }</ID>
+    <ID>OptionalWhenBraces:TopicSegmentViewHolder.kt$TopicSegmentViewHolder$isExplore -&gt; { topic.findExploreTopicBackground(context) }</ID>
+    <ID>PackageNaming:GifViewModel.kt$package com.vokal.Creation.gifs</ID>
+    <ID>PackageNaming:TutorialParentResponse.kt$package com.vokal.core.pojo.responses.Tutorial</ID>
+    <ID>PrintStackTrace:CoUsersListResponse.kt$CoUserStatus.Companion$e</ID>
+    <ID>PrintStackTrace:MultilingualActivity.kt$MultilingualActivity$e</ID>
+    <ID>RedundantVisibilityModifierRule:GifViewModel.kt$GifViewModel$public fun getGifsData(): MutableLiveData&lt;List&lt;GifMedia&gt;&gt;</ID>
+    <ID>RedundantVisibilityModifierRule:KooCommentPreferences.kt$KooCommentPreferences</ID>
+    <ID>RedundantVisibilityModifierRule:LanguageTabModel.kt$LanguageTabModel$public fun isPollOptionAreSame(): Boolean</ID>
+    <ID>RedundantVisibilityModifierRule:MediaTrimState.kt$MediaTrimState</ID>
+    <ID>RedundantVisibilityModifierRule:MultilingualViewModel.kt$MultilingualViewModel$public fun updateDotData(languageCode: String, value: Boolean)</ID>
+    <ID>RedundantVisibilityModifierRule:TopicListAdapter.kt$TopicListAdapter$public fun findTopic(position: Int)</ID>
+    <ID>ReturnCount:ChatAdapter.kt$ChatAdapter$override fun getItemViewType(position: Int): Int</ID>
+    <ID>ReturnCount:FirebaseRepository.kt$FirebaseRepository$fun deleteChatMessage(message: ChatMessage?)</ID>
+    <ID>ReturnCount:FirebaseRepository.kt$FirebaseRepository$fun init(room: ChatRoom, sender: Channel, receiver: Channel)</ID>
+    <ID>ReturnCount:FirebaseRepository.kt$FirebaseRepository$private fun handleRequestState(isRoomActive: Boolean): Boolean</ID>
+    <ID>ReturnCount:KooCreationFragment.kt$KooCreationFragment$override fun handleTitleTextFromText(editText: EditText)</ID>
+    <ID>ReturnCount:KooCreationFragment.kt$KooCreationFragment$private fun isDifferentWordSelected(offset: Int): Boolean</ID>
+    <ID>ReturnCount:KooFeedAudioVideoViewHolder.kt$KooFeedAudioVideoViewHolder$protected fun isAutoPlayInProgress(): Boolean</ID>
+    <ID>ReturnCount:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun onCreateViewHolder( parent: ViewGroup, viewType: Int ): BaseViewHolder&lt;IFeedItem&gt;</ID>
+    <ID>ReturnCount:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun showBigFollowButton(contentId: String, blinkType: BigFollowButton.BlinkType)</ID>
+    <ID>ReturnCount:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun showLikeBlink(contentData: ChannelContentData): Boolean</ID>
+    <ID>ReturnCount:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$override fun showShareBlinkAtPosition(contentId: String, blinkType: BlinkShare.BlinkType)</ID>
+    <ID>ReturnCount:KooFeedVideoViewHolder.kt$KooFeedVideoViewHolder$override fun onClick(view: View)</ID>
+    <ID>ReturnCount:MultilingualViewModel.kt$MultilingualViewModel$fun getMaxCharLimit(@IdRes id: Int): Int</ID>
+    <ID>ReturnCount:TopicsAnalytics.kt$TopicMode$fun findListingMode(isFromTab: Boolean, isFollowing: Boolean): String</ID>
+    <ID>SpreadOperator:KooBindingAdapters.kt$KooBindingAdapters$(*contentData.profileImages.split("\\s*,\\s*").toTypedArray())</ID>
+    <ID>SpreadOperator:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$( *SharedPrefs.getParam(SharedPrefs.PEOPLE_IMAGES).split(",").toTypedArray() )</ID>
+    <ID>SpreadOperator:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$(*Utils.getInviteUsersImages().split("\\s*,\\s*").toTypedArray())</ID>
+    <ID>SpreadOperator:KooFeedMoreLikeThisViewHolder.kt$KooFeedMoreLikeThisViewHolder$( *contentData.profileImages.split("\\s*,\\s*".toRegex()).toTypedArray() )</ID>
+    <ID>SpreadOperator:KooFeedSuperExpertViewHolder.kt$KooFeedSuperExpertViewHolder$(*user.followingImages.split(",").toTypedArray())</ID>
+    <ID>SpreadOperator:MultilingualViewModel.kt$MultilingualViewModel.&lt;no name provided&gt;$(list, *textTranslateResponse.translationList)</ID>
+    <ID>SwallowedException:KooCreationFragment.kt$KooCreationFragment$e: ClassCastException</ID>
+    <ID>SwallowedException:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$e: Exception</ID>
+    <ID>SwallowedException:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$e: Exception</ID>
+    <ID>SwallowedException:MoEngageHelper.kt$MoEngageHelper$e: PackageManager.NameNotFoundException</ID>
+    <ID>SwallowedException:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$e: Exception</ID>
+    <ID>SwallowedException:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$e: NullPointerException</ID>
+    <ID>SwallowedException:MultilingualActivity.kt$MultilingualActivity$activityNotFoundException: ActivityNotFoundException</ID>
+    <ID>SwallowedException:MultilingualActivity.kt$MultilingualActivity$e: Exception</ID>
+    <ID>SwallowedException:TopicCollectionViewModel.kt$TopicCollectionViewModel$e: Exception</ID>
+    <ID>SwallowedException:TopicListingViewModel.kt$TopicListingViewModel$e: ClassCastException</ID>
+    <ID>SwallowedException:TopicListingViewModel.kt$TopicListingViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CoUsersListResponse.kt$CoUserStatus.Companion$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:KooCreationFragment.kt$KooCreationFragment.&lt;no name provided&gt;$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:KooFeedJustificationTextViewHolder.kt$KooFeedJustificationTextViewHolder$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MLKPostWorker.kt$MLKPostWorker$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MediaUploadProgressDialog.kt$MediaUploadProgressDialog$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS$e: NullPointerException</ID>
+    <ID>TooGenericExceptionCaught:MultilingualActivity.kt$MultilingualActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TopicCollectionViewModel.kt$TopicCollectionViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TopicListingFragment.kt$TopicListingFragment$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TopicListingViewModel.kt$TopicListingViewModel$e: Exception</ID>
+    <ID>TooManyFunctions:IKooFeedAdapter.kt$IKooFeedAdapter&lt;T&gt;</ID>
+    <ID>TooManyFunctions:IKooFeedItem.kt$IKooFeedItem : IFeedItem</ID>
+    <ID>TooManyFunctions:KooCreationFragment.kt$KooCreationFragment : BaseFragmentOnClickListenerTitleEditInterfacePollCreationCallBackPollOptionClickListener</ID>
+    <ID>TooManyFunctions:KooCreationPreviewAdapter.kt$KooCreationPreviewAdapter : Adapter</ID>
+    <ID>TooManyFunctions:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$KooFeedAdapterDataFactory</ID>
+    <ID>TooManyFunctions:KooFeedAudioPreviewViewHolder.kt$KooFeedAudioPreviewViewHolder : KooFeedAudioVideoViewHolderOnClickListener</ID>
+    <ID>TooManyFunctions:KooFeedAudioVideoViewHolder.kt$KooFeedAudioVideoViewHolder&lt;T : IFeedItem&gt; : KooFeedEntityViewHolder</ID>
+    <ID>TooManyFunctions:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder : KooFeedEntityViewHolderOnClickListener</ID>
+    <ID>TooManyFunctions:KooFeedReKooViewHolder.kt$KooFeedReKooViewHolder : KooFeedAudioVideoViewHolderOnClickListenerAudioPreviewImplVideoPreviewImplRekooInteractionInterface</ID>
+    <ID>TooManyFunctions:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter : DiffUtilBackedAdapterIKooFeedAdapter</ID>
+    <ID>TooManyFunctions:KooFeedVideoViewHolder.kt$KooFeedVideoViewHolder : KooFeedAudioVideoViewHolderOnClickListener</ID>
+    <ID>TooManyFunctions:LanguageTabModel.kt$LanguageTabModel</ID>
+    <ID>TooManyFunctions:LobbyActivity.kt$LobbyActivity : BaseActivity</ID>
+    <ID>TooManyFunctions:LobbyFragment.kt$LobbyFragment : BaseFragmentLobbyInterfaceChannelEditorActionsResponseListener</ID>
+    <ID>TooManyFunctions:MLKPostResponse.kt$MLKPostResponse</ID>
+    <ID>TooManyFunctions:MultiLanguageSelectionBS.kt$MultiLanguageSelectionBS : BottomSheetDialogFragment</ID>
+    <ID>TooManyFunctions:MultilingualActivity.kt$MultilingualActivity : BaseActivityKooCreationInterfaceLanguageSelectionListenerTranslationAdapterInterfaceOnCheckedChangeListenerTitleEditInterface</ID>
+    <ID>TooManyFunctions:MultilingualAnalytics.kt$com.multilingual.MultilingualAnalytics.kt</ID>
+    <ID>TooManyFunctions:MultilingualViewModel.kt$MultilingualViewModel : MLKBaseViewModel</ID>
+    <ID>TooManyFunctions:NewMessageActivity.kt$NewMessageActivity : BaseActivityAdapterToSearchActivity</ID>
+    <ID>TooManyFunctions:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity : BaseActivityOnTagClickedListener</ID>
+    <ID>TooManyFunctions:PreviewFragment.kt$PreviewFragment : BaseFragmentOnClickListenerKooPreviewListener</ID>
+    <ID>TooManyFunctions:RoomActivity.kt$RoomActivity : BaseActivityChatInterface</ID>
+    <ID>TooManyFunctions:RoomViewModel.kt$RoomViewModel : BaseViewModel</ID>
+    <ID>TooManyFunctions:TopicCollectionListingActivity.kt$TopicCollectionListingActivity : BaseTopicActivity</ID>
+    <ID>TooManyFunctions:TopicDetailActivity.kt$TopicDetailActivity : BaseTopicActivityActiveFeedFragmentListenerMessageActivityInterface</ID>
+    <ID>TooManyFunctions:TopicListingActivity.kt$TopicListingActivity : BaseTopicActivity</ID>
+    <ID>TooManyFunctions:TopicListingFragment.kt$TopicListingFragment : BaseFragment</ID>
+    <ID>TooManyFunctions:TopicsAnalytics.kt$com.vokal.vokalytics.TopicsAnalytics.kt</ID>
+    <ID>TooManyFunctions:ViewModelModule.kt$ViewModelModule</ID>
+    <ID>UnnecessaryParentheses:FeedFragmentUtil.kt$FeedFragmentUtil$(endPosition - startPosition)</ID>
+    <ID>UnnecessaryParentheses:FeedItemUtils.kt$FeedItemUtils$(KuhuApplication.getContext().resources.getDimension(R.dimen.home_card_side_margin) * 2)</ID>
+    <ID>UnnecessaryParentheses:FeedItemUtils.kt$FeedItemUtils$(KuhuApplication.getContext().resources.getDimension(R.dimen.home_card_side_padding) * 2)</ID>
+    <ID>UnnecessaryParentheses:FirebaseRepository.kt$FirebaseRepository$(chatShowState == ChatShowState.PARTIALLY_DISABLED)</ID>
+    <ID>UnnecessaryParentheses:FirebaseRepository.kt$FirebaseRepository$(lastMessageTs - item.timestamp)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(!data.isAudioPresent() &amp;&amp; !isTextClose)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(!data.isAudioPresent() &amp;&amp; data.hasEdited)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(!data.isVideoPresent() &amp;&amp; !isTextClose)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(!data.isVideoPresent() &amp;&amp; data.hasEdited)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(ResourceState.ERROR.name)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(ResourceState.LOADING.name)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(ResourceState.SUCCESS.name)</ID>
+    <ID>UnnecessaryParentheses:KooCreationFragment.kt$KooCreationFragment$(data.isThoughtMediaNotPresent() &amp;&amp; !isTextClose)</ID>
+    <ID>UnnecessaryParentheses:KooCreationPreviewAdapter.kt$KooCreationPreviewAdapter.KooCreationPreviewLayout$(Gravity.CENTER_VERTICAL)</ID>
+    <ID>UnnecessaryParentheses:KooFeedAdapterDataFactory.kt$KooFeedAdapterDataFactory$( isKooCreatedJustNow &amp;&amp; accountHelper.isCurrentUser(kooFeedEntityItemModel.followingFeedEntity.kooContent().creatorId) )</ID>
+    <ID>UnnecessaryParentheses:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$(FirebaseRemoteConfig.getInstance().getString(FireBaseRemoteConfigHelper.SHOW_PROFILE_IMAGES_IN_SBF))</ID>
+    <ID>UnnecessaryParentheses:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$(itemView.context as LifecycleOwner)</ID>
+    <ID>UnnecessaryParentheses:KooFeedEntityViewHolder.kt$KooFeedEntityViewHolder$(super.getEntity() as KooFeedEntityItemModel)</ID>
+    <ID>UnnecessaryParentheses:KooFeedRecyclerAdapter.kt$KooFeedRecyclerAdapter$( isKooCreatedJustNow &amp;&amp; TextUtils.equals(creatorId, SharedPrefs.getParam(SharedPrefs.MY_UID)) )</ID>
+    <ID>UnnecessaryParentheses:LanguageTabModel.kt$LanguageTabModel$(Utils.isStringNotNull(Utils.trimLeadingSpacesAndNewLines(multilingualContentData.thoughtText)))</ID>
+    <ID>UnnecessaryParentheses:LanguageTabModel.kt$LanguageTabModel$(isPollValid() &amp;&amp; isPollOptionAreSame().not())</ID>
+    <ID>UnnecessaryParentheses:LanguageTabModel.kt$LanguageTabModel$(isVideoPresent() &amp;&amp; recordState == Statics.RECORD_TYPE_VIDEO)</ID>
+    <ID>UnnecessaryParentheses:LobbyAdapter.kt$LobbyAdapter.ViewHolder$(lobbyUser.lastReceived ?: 0)</ID>
+    <ID>UnnecessaryParentheses:LobbyAdapter.kt$LobbyAdapter.ViewHolder$(lobbyUser.lastSeen ?: 0)</ID>
+    <ID>UnnecessaryParentheses:LobbyFragment.kt$LobbyFragment$(it is Boolean)</ID>
+    <ID>UnnecessaryParentheses:LobbyViewModel.kt$LobbyViewModel$(state.value == ResourceState.FIRST_LOAD || state.value == ResourceState.LOADING)</ID>
+    <ID>UnnecessaryParentheses:MediaUploadProgressDialog.kt$MediaUploadProgressDialog$(lastProgress + it.progress)</ID>
+    <ID>UnnecessaryParentheses:MultilingualActivity.kt$MultilingualActivity$( PermissionManager.isPermissionGranted( this, Manifest.permission.RECORD_AUDIO ) &amp;&amp; PermissionManager.isPermissionGranted( this, Manifest.permission.WRITE_EXTERNAL_STORAGE ) )</ID>
+    <ID>UnnecessaryParentheses:MultilingualActivity.kt$MultilingualActivity$( viewModel.findSelectedTab() ?.isActive() == true )</ID>
+    <ID>UnnecessaryParentheses:MultilingualContents.kt$MediaImage$(other as CommonContent&lt;ArrayList&lt;String&gt;&gt;)</ID>
+    <ID>UnnecessaryParentheses:MultilingualViewModel.kt$MultilingualViewModel$( tabModelData.isPollValid() .not() || tabModelData.isPollOptionAreSame() )</ID>
+    <ID>UnnecessaryParentheses:OnTouchAnimatorListener.kt$OnTouchAnimatorListener$(System.currentTimeMillis() - lastUpTime)</ID>
+    <ID>UnnecessaryParentheses:PardonDisplayWorkFlow.kt$PardonDisplayWorkFlow$(vm.getApplication&lt;KuhuApplication&gt;())</ID>
+    <ID>UnnecessaryParentheses:PreviewFragment.kt$PreviewFragment$( it.multilingualContentData.thoughtText?.isNotEmpty() ?: false || it.previewScreenControlDetails.isTranslationSuccess.not() )</ID>
+    <ID>UnnecessaryParentheses:PreviewFragment.kt$PreviewFragment$(ResourceState.LOADING.name)</ID>
+    <ID>UnnecessaryParentheses:PreviewFragment.kt$PreviewFragment$(ResourceState.SUCCESS.name)</ID>
+    <ID>UnnecessaryParentheses:RoomViewModel.kt$RoomViewModel$(receiver.isChatMode &amp;&amp; room.receiverFollowing)</ID>
+    <ID>UnnecessaryParentheses:RoomViewModel.kt$RoomViewModel$(room.isActivateRequired &amp;&amp; (room.isReceiverApproved || room.isSenderApproved))</ID>
+    <ID>UnnecessaryParentheses:RoomViewModel.kt$RoomViewModel$(room.isStale &amp;&amp; (receiver.isChatMode &amp;&amp; room.receiverFollowing))</ID>
+    <ID>UnnecessaryParentheses:TopicListingViewModel.kt$TopicListingViewModel$(simpleFeedItem as TopicFeedItemResponse)</ID>
+    <ID>UnnecessaryParentheses:UserRoomModel.kt$UserRoomModel$( TextUtils.equals(userId, obj.userId) &amp;&amp; TextUtils.equals(headline, obj.headline) &amp;&amp; TextUtils.equals(logo, obj.logo) &amp;&amp; TextUtils.equals(name, obj.name) &amp;&amp; isFollowing == obj.isFollowing &amp;&amp; TextUtils.equals(userHandle, userHandle) &amp;&amp; TextUtils.equals(roomType, obj.roomType) &amp;&amp; isBlocked == obj.isBlocked &amp;&amp; TextUtils.equals(roomId, obj.roomId) &amp;&amp; TextUtils.equals(lastMessage, obj.lastMessage) &amp;&amp; lastSeen == obj.lastSeen &amp;&amp; chatRoomStatus == obj.chatRoomStatus &amp;&amp; isChatMode == obj.isChatMode &amp;&amp; senderStatus == obj.senderStatus &amp;&amp; receiverStatus == obj.receiverStatus &amp;&amp; lastReceived == obj.lastReceived &amp;&amp; lastModified == obj.lastModified &amp;&amp; deletedat == obj.deletedat )</ID>
+    <ID>UnnecessaryParentheses:VideoPreLoadingService.kt$VideoPreLoadingService$( bytesCached * 100.0 / requestLength )</ID>
+    <ID>UnusedPrivateMember:DevEditTextSettingItem.kt$DevEditTextSettingItem$before: Int</ID>
+    <ID>UnusedPrivateMember:DevEditTextSettingItem.kt$DevEditTextSettingItem$count: Int</ID>
+    <ID>UnusedPrivateMember:DevEditTextSettingItem.kt$DevEditTextSettingItem$start: Int</ID>
+    <ID>UnusedPrivateMember:ExclusiveMediaDialog.kt$ExclusiveMediaDialog$private lateinit var btnRetry: AppCompatTextView</ID>
+    <ID>UnusedPrivateMember:ExclusiveMediaDialog.kt$ExclusiveMediaDialog$private val mLifecycleOwner: LifecycleOwner</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$gif: String?</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$private fun bindTextForTranslateButtons(originalLanguage: String?)</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$private fun bindThoughtHint()</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$private fun isMediaPresent()</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$private fun openVideoRecordActivity()</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$private fun startAudioRecording()</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$toCopyOriginal: Boolean</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$val isBothNotPresent = !data.isTextClose &amp;&amp; !isAudioThoughtPresent &amp;&amp; !isVideoThoughtPresent</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$val isToEnableMedia = noOriginal || (data.isThoughtMediaNotPresent() &amp;&amp; !isTextClose)</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment$var kooInLanguage = RESOURCE_NAME + appLanguageCode</ID>
+    <ID>UnusedPrivateMember:KooCreationFragment.kt$KooCreationFragment.Companion$title: String? = null</ID>
+    <ID>UnusedPrivateMember:KooFeedBaseViewHolder.kt$KooFeedBaseViewHolder$private var multilingualProgressBar: ProgressBar? = itemView.findViewById(R.id.mulitilingual_progress_bar)</ID>
+    <ID>UnusedPrivateMember:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$private fun getActionButtonRoundedDrawable(context: Context, color: String): Drawable?</ID>
+    <ID>UnusedPrivateMember:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$private val buttonViewBinding = binding as KooFeedFollowBinding</ID>
+    <ID>UnusedPrivateMember:LanguageTabModel.kt$LanguageTabModel$originalLanguage: String?</ID>
+    <ID>UnusedPrivateMember:LanguageTabModel.kt$LanguageTabModel$private fun createContentId()</ID>
+    <ID>UnusedPrivateMember:LanguageTabModel.kt$LanguageTabModel$private fun findParentContentId()</ID>
+    <ID>UnusedPrivateMember:MLKApiWrapper.kt$MLKApiWrapper$private val message: String = "SUCCESS"</ID>
+    <ID>UnusedPrivateMember:MLKPostWorker.kt$MLKPostWorker$val original = inputData.getString(Statics.ORIGINAL_LANGUAGE)</ID>
+    <ID>UnusedPrivateMember:MediaFileUploadFailRetryDialog.kt$MediaFileUploadFailRetryDialog$private val mLifecycleOwner: LifecycleOwner</ID>
+    <ID>UnusedPrivateMember:MultilingualActivity.kt$MultilingualActivity$val hasNoOriginal = current.originalCode == null</ID>
+    <ID>UnusedPrivateMember:MultilingualActivity.kt$MultilingualActivity$val x4: Float = ev.rawX + binding.tabLayout.getLeft() - scrcoords4[0]</ID>
+    <ID>UnusedPrivateMember:MultilingualAnalytics.kt$ private fun asInt(isTrue: Boolean)</ID>
+    <ID>UnusedPrivateMember:MultilingualAnalytics.kt$ private fun getAppLanguagePosition(list: List&lt;String&gt;): Int</ID>
+    <ID>UnusedPrivateMember:MultilingualAnalytics.kt$ private fun getPositionLanguage(list: List&lt;String&gt;): String?</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$editText: EditText</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$private fun copyGIFFromOriginal(lanCode: String)</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$private fun getOriginalTab()</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$private fun isMediaFilealreadyAvailable(multilingualContentData: MultilingualContentData): Boolean</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$private val audioDataRequest = MutableLiveData&lt;LanguageTabModel&gt;()</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$text: String?</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$val pollTitles = shareEntity.pollOptions</ID>
+    <ID>UnusedPrivateMember:MultilingualViewModel.kt$MultilingualViewModel$val removedTabs = arrayListOf&lt;LanguageTabModel&gt;()</ID>
+    <ID>UnusedPrivateMember:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$private var isTimerCancel: Boolean = false</ID>
+    <ID>UnusedPrivateMember:PreferenceSelectionActivity.kt$PreferenceSelectionActivity$private fun startAutoProceedTimer()</ID>
+    <ID>UnusedPrivateMember:TopicDetailActivity.kt$TopicDetailActivity$private fun findScreen()</ID>
+    <ID>UnusedPrivateMember:TopicListingActivity.kt$TopicListingActivity$private lateinit var binding: TopicListingActivityLayoutBinding</ID>
+    <ID>UnusedPrivateMember:TopicListingActivity.kt$TopicListingActivity.Companion$private const val KEY_ACTIVE_TAB_TITLE = "title"</ID>
+    <ID>UnusedPrivateMember:TopicListingActivity.kt$TopicListingActivity.Companion$private const val TAG = "TopicListingActivity"</ID>
+    <ID>UnusedPrivateMember:TopicListingFragment.kt$TopicListingFragment$isFollowingAny: Boolean</ID>
+    <ID>UnusedPrivateMember:TopicListingFragment.kt$TopicListingFragment$private fun removeVisibilityTracker()</ID>
+    <ID>UnusedPrivateMember:TopicListingFragment.kt$TopicListingFragment$topicPosition: Int</ID>
+    <ID>UnusedPrivateMember:TopicListingViewModel.kt$TopicListingViewModel.Companion$private const val TAG = "TopicListingViewModel"</ID>
+    <ID>UnusedPrivateMember:TopicsDetailViewModel.kt$TopicsDetailViewModel.Companion$private const val TAG = "TopicsDetailViewModel"</ID>
+    <ID>UseDataClass:AutoLoginProfile.kt$AutoLoginProfile</ID>
+    <ID>UseDataClass:ContentPreferences.kt$ContentPreferences</ID>
+    <ID>UseDataClass:ContentValidation.kt$ContentValidation</ID>
+    <ID>UseDataClass:MultiLanguageTranslationRequest.kt$MultiLanguageTranslationRequest</ID>
+    <ID>UseDataClass:PardonDisplayWorkFlow.kt$PardonDisplayConfig</ID>
+    <ID>UseDataClass:RoomViewState.kt$RoomViewStatus</ID>
+    <ID>UtilityClassWithPublicConstructor:AdjustHelper.kt$AdjustHelper</ID>
+    <ID>UtilityClassWithPublicConstructor:KooCreationEntityMap.kt$KooCreationEntityMap</ID>
+    <ID>UtilityClassWithPublicConstructor:LikeBlinkDataStore.kt$LikeBlinkDataStore</ID>
+    <ID>UtilityClassWithPublicConstructor:ObjectExtension.kt$ObjectExtension</ID>
+    <ID>VariableNaming:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$private var follow_blink: LottieAnimationView</ID>
+    <ID>VariableNaming:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$val EXP_ID_SAMPLE_FEED = "exp_sample_feed"</ID>
+    <ID>VariableNaming:KooFeedButtonViewHolder.kt$KooFeedButtonViewHolder$val TAG: String = FeedButtonActionViewHolder::class.java.simpleName</ID>
+    <ID>VariableNaming:MediaUploadProgressDialog.kt$MediaUploadProgressDialog$private val TAG = "MediaUploadProgressDial"</ID>
+    <ID>VariableNaming:MultilingualActivity.kt$MultilingualActivity$private var follow_blink: LottieAnimationView? = null</ID>
+    <ID>VariableNaming:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$private var TIME_REMAINING_MS = FirebaseRemoteConfig.getInstance().getLong(FireBaseRemoteConfigHelper.PREFERENCES_AUTOREDIRECT_TIME)</ID>
+    <ID>VariableNaming:PeoplePreferenceSelectionActivity.kt$PeoplePreferenceSelectionActivity$private var TIME_REMAINING_MS_AFTER_SELECTION = FirebaseRemoteConfig.getInstance().getLong(FireBaseRemoteConfigHelper.PREFERENCE_SELECTED_AUTOREDIRECT_TIME)</ID>
+    <ID>VariableNaming:PreferenceSelectionActivity.kt$PreferenceSelectionActivity$private var TIME_REMAINING_MS = FirebaseRemoteConfig.getInstance().getLong(FireBaseRemoteConfigHelper.PREFERENCES_AUTOREDIRECT_TIME)</ID>
+    <ID>VariableNaming:TopicsBaseViewModel.kt$TopicsBaseViewModel$protected val _loadingStateLiveData = MutableLiveData&lt;LoadingState&gt;()</ID>
+    <ID>VariableNaming:VideoPreLoadingService.kt$VideoPreLoadingService$private val TAG = "VideoPreLoadingService"</ID>
+    <ID>VariableNaming:VideoPreLoadingService.kt$VideoPreLoadingService$val VIDEO_LIST = "VIDEO_LIST"</ID>
+    <ID>WildcardImport:FeedFragmentUtil.kt$import com.kuhu.feeds.feeditems.*</ID>
+    <ID>WildcardImport:FirebaseRepository.kt$import kotlinx.coroutines.*</ID>
+    <ID>WildcardImport:KooCreationFragment.kt$import com.kuhu.statics.Statics.*</ID>
+    <ID>WildcardImport:KooFeedAdapterDataFactory.kt$import com.kuhu.feeds.feeditems.*</ID>
+    <ID>WildcardImport:KooFeedRecyclerAdapter.kt$import com.kuhu.data.entities.*</ID>
+    <ID>WildcardImport:KooFeedRecyclerAdapter.kt$import com.kuhu.databinding.*</ID>
+    <ID>WildcardImport:KooFeedRecyclerAdapter.kt$import com.kuhu.feeds.viewholder.*</ID>
+    <ID>WildcardImport:KooFeedRecyclerAdapter.kt$import com.kuhu.ui.adapters.viewholders.*</ID>
+    <ID>WildcardImport:KooFeedUserViewHolder.kt$import com.kuhu.helpers.*</ID>
+    <ID>WildcardImport:LobbyFragment.kt$import com.kuhu.helpers.*</ID>
+    <ID>WildcardImport:MaterialDialogBehavior.kt$import android.view.*</ID>
+    <ID>WildcardImport:MoEngageHelper.kt$import com.kuhu.net.Config.*</ID>
+    <ID>WildcardImport:MultiLanguageSelectionBS.kt$import android.view.*</ID>
+    <ID>WildcardImport:MultilingualActivity.kt$import android.view.*</ID>
+    <ID>WildcardImport:MultilingualActivity.kt$import android.widget.*</ID>
+    <ID>WildcardImport:MultilingualActivity.kt$import com.kuhu.data.entities.*</ID>
+    <ID>WildcardImport:MultilingualActivity.kt$import com.kuhu.helpers.*</ID>
+    <ID>WildcardImport:MultilingualViewModel.kt$import androidx.lifecycle.*</ID>
+    <ID>WildcardImport:MultilingualViewModel.kt$import com.kuhu.analytics.Event.*</ID>
+    <ID>WildcardImport:MultilingualViewModel.kt$import com.kuhu.data.entities.*</ID>
+    <ID>WildcardImport:MultilingualViewModel.kt$import com.multilingual.entities.*</ID>
+    <ID>WildcardImport:RoomActivity.kt$import com.kuhu.firestorechat.util.*</ID>
+    <ID>WildcardImport:RoomActivity.kt$import com.kuhu.helpers.*</ID>
+    <ID>WildcardImport:TopicCollectionListingActivity.kt$import com.vokal.vokalytics.*</ID>
+    <ID>WildcardImport:TopicCollectionViewModel.kt$import androidx.lifecycle.*</ID>
+    <ID>WildcardImport:TopicDetailActivity.kt$import com.kuhu.data.entities.*</ID>
+    <ID>WildcardImport:TopicDetailActivity.kt$import com.vokal.vokalytics.*</ID>
+    <ID>WildcardImport:TopicListingFragment.kt$import com.kuhu.helpers.*</ID>
+    <ID>WildcardImport:TopicListingFragment.kt$import com.kuhu.ui.activities.*</ID>
+    <ID>WildcardImport:TopicListingFragment.kt$import com.vokal.vokalytics.*</ID>
+    <ID>WildcardImport:TopicListingViewModel.kt$import androidx.lifecycle.*</ID>
+    <ID>WildcardImport:VideoPreLoadingService.kt$import com.google.android.exoplayer2.upstream.*</ID>
+    <ID>WildcardImport:VideoPreLoadingService.kt$import com.google.android.exoplayer2.upstream.cache.*</ID>
+    <ID>WildcardImport:ViewModelModule.kt$import com.kuhu.viewmodels.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
